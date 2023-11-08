@@ -20,8 +20,7 @@ entrar.click()
 
 time.sleep(10)
 
-agrn= driver.find_element("xpath", '//*[@id="mount_0_0_Ka"]/div/div/div[2]/div/div/div/div[1]/div[1]/div[2]/section/main/div/div/div/div')
-time.sleep(3)
+agrn= driver.find_element("xpath", '//*[@id="react-root"]/section/main/div/div/div/div/button')
 agrn.click()
 
 time.sleep(7)
