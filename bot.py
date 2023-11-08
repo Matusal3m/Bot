@@ -12,6 +12,11 @@ driver.set_window_size(720, 1000)
 time.sleep(5)
 
 def clicar_elemento(metodo, elemento):
+    variavel =  driver.find_element(metodo, elemento)
+    variavel.click()
+
+username = driver.find_element('xpath', '//*[@id="loginForm"]/div/div[1]/div/label/input')
+username.send_keys('foguetesovietico')
 
 time.sleep(1)
 
