@@ -10,6 +10,6 @@ def verificar(mensagem):
 
 @bot.message_handler(func=verificar)
 def chat():
-    bot.reply_backend(mensagem, "CU")
+    bot.reply_backend(mensagem, "não")
     
 bot.polling()
