@@ -32,15 +32,10 @@ Entrar em seguidores
     Wait Until Element Is Visible    ${followers_locator}    10s
     Click Element    ${followers_locator}
 Navegar até um perfil
-    [Arguments]    ${control}
     Wait Until Element Is Visible    ${remove_follower}
-    FOR  ${tabs}  IN   ${control} 
-        Press Keys    None    TAB
-        Press Keys    None    TAB
-        Press Keys    None    TAB
-    END
-    
-
+    Press Keys    None    TAB
+    Press Keys    None    TAB
+    Press Keys    None    TAB
 Confirmar usuário
     Press Keys    None    ENTER
 Verificar se segue e entrar em mensagens
@@ -62,15 +57,17 @@ Enviar mensagem
     Sleep    .2s
     Press Keys    None    ${message_content}
     Press Keys    None    ENTER
-Keywords para loop   
-    WHILE    True
-        Navegar até um perfil  c   
+Keywords para loop  
+    [Arguments]    ${args} 
+    FOR  ${i}  IN RANGE  ${args}
+        Navegar até um perfil         
     END
     Confirmar usuário
     Verificar se segue e entrar em mensagens
     IF  ${boolean}
         Enviar mensagem
-        Entrar no perfil
+        Go Back
+        Go Back
     ELSE
         Go Back
     END
@@ -82,6 +79,8 @@ Ir até os seguidores
     Entrar no perfil
     Entrar em seguidores
 Interações com seguidores
+    ${voltas} =   Set Variable    1
     WHILE  True
-        Keywords para loop
+        Keywords para loop    ${voltas}
+        ${voltas} =  Evaluate    ${voltas} + 1
     END   
