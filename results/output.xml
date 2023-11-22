@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.12.0 on win32)" generated="20231121 14:58:29.630" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.12.0 on win32)" generated="20231121 15:30:30.213" rpa="false" schemaversion="3">
 <suite id="s1" name="Instabot" source="C:\Users\Matusalem\Documents\GitHub\Bot\instabot.robot">
 <test id="s1-t1" name="Inicar e fazer login" line="79">
 <kw name="Abrir Instagram">
@@ -7,67 +7,67 @@
 <arg>https://www.instagram.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231121 14:58:29.952" level="INFO">Opening browser 'chrome' to base url 'https://www.instagram.com/'.</msg>
-<status status="PASS" starttime="20231121 14:58:29.944" endtime="20231121 14:58:34.017"/>
+<msg timestamp="20231121 15:30:30.537" level="INFO">Opening browser 'chrome' to base url 'https://www.instagram.com/'.</msg>
+<status status="PASS" starttime="20231121 15:30:30.537" endtime="20231121 15:30:34.901"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:29.944" endtime="20231121 14:58:34.017"/>
+<status status="PASS" starttime="20231121 15:30:30.537" endtime="20231121 15:30:34.901"/>
 </kw>
 <kw name="Colocar informações e enviar">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${username_locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:34.025" endtime="20231121 14:58:34.606"/>
+<status status="PASS" starttime="20231121 15:30:34.901" endtime="20231121 15:30:35.282"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_locator}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231121 14:58:34.606" level="INFO">Typing text 'foguetesovietico' into text field '//*[@id="loginForm"]/div/div[1]/div/label/input'.</msg>
-<status status="PASS" starttime="20231121 14:58:34.606" endtime="20231121 14:58:35.056"/>
+<msg timestamp="20231121 15:30:35.290" level="INFO">Typing text 'foguetesovietico' into text field '//*[@id="loginForm"]/div/div[1]/div/label/input'.</msg>
+<status status="PASS" starttime="20231121 15:30:35.282" endtime="20231121 15:30:35.697"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password_locator}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231121 14:58:35.064" level="INFO">Typing text 'saviogatoboy22' into text field '//*[@id="loginForm"]/div/div[2]/div/label/input'.</msg>
-<status status="PASS" starttime="20231121 14:58:35.064" endtime="20231121 14:58:35.346"/>
+<msg timestamp="20231121 15:30:35.705" level="INFO">Typing text 'saviogatoboy22' into text field '//*[@id="loginForm"]/div/div[2]/div/label/input'.</msg>
+<status status="PASS" starttime="20231121 15:30:35.697" endtime="20231121 15:30:36.018"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:58:35.346" level="INFO">Clicking element '//*[@id="loginForm"]/div/div[3]/button'.</msg>
-<status status="PASS" starttime="20231121 14:58:35.346" endtime="20231121 14:58:35.471"/>
+<msg timestamp="20231121 15:30:36.018" level="INFO">Clicking element '//*[@id="loginForm"]/div/div[3]/button'.</msg>
+<status status="PASS" starttime="20231121 15:30:36.018" endtime="20231121 15:30:36.194"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:34.017" endtime="20231121 14:58:35.471"/>
+<status status="PASS" starttime="20231121 15:30:34.901" endtime="20231121 15:30:36.194"/>
 </kw>
 <kw name="Agora não">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${agora_não}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:35.471" endtime="20231121 14:58:41.182"/>
+<status status="PASS" starttime="20231121 15:30:36.194" endtime="20231121 15:30:41.330"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${agora_não}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:58:41.182" level="INFO">Clicking element 'css=.xjqpnuy'.</msg>
-<status status="PASS" starttime="20231121 14:58:41.182" endtime="20231121 14:58:42.773"/>
+<msg timestamp="20231121 15:30:41.338" level="INFO">Clicking element 'css=.xjqpnuy'.</msg>
+<status status="PASS" starttime="20231121 15:30:41.330" endtime="20231121 15:30:46.243"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${recusar}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:42.773" endtime="20231121 14:58:43.261"/>
+<status status="PASS" starttime="20231121 15:30:46.243" endtime="20231121 15:30:46.291"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${recusar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:58:43.261" level="INFO">Clicking element 'css=._a9_1'.</msg>
-<status status="PASS" starttime="20231121 14:58:43.261" endtime="20231121 14:58:43.431"/>
+<msg timestamp="20231121 15:30:46.291" level="INFO">Clicking element 'css=._a9_1'.</msg>
+<status status="PASS" starttime="20231121 15:30:46.291" endtime="20231121 15:30:46.450"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:35.471" endtime="20231121 14:58:43.431"/>
+<status status="PASS" starttime="20231121 15:30:36.194" endtime="20231121 15:30:46.450"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:29.944" endtime="20231121 14:58:43.431"/>
+<status status="PASS" starttime="20231121 15:30:30.529" endtime="20231121 15:30:46.450"/>
 </test>
 <test id="s1-t2" name="Ir até os seguidores" line="83">
 <kw name="Entrar no perfil">
@@ -75,40 +75,40 @@
 <arg>${profile_locator}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:43.439" endtime="20231121 14:58:43.471"/>
+<status status="PASS" starttime="20231121 15:30:46.466" endtime="20231121 15:30:46.671"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${profile_locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:58:43.471" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
-<status status="PASS" starttime="20231121 14:58:43.471" endtime="20231121 14:58:43.655"/>
+<msg timestamp="20231121 15:30:46.679" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
+<status status="PASS" starttime="20231121 15:30:46.671" endtime="20231121 15:30:46.889"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:43.439" endtime="20231121 14:58:43.655"/>
+<status status="PASS" starttime="20231121 15:30:46.466" endtime="20231121 15:30:46.889"/>
 </kw>
 <kw name="Entrar em seguidores">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${followers_locator}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:43.655" endtime="20231121 14:58:45.794"/>
+<status status="PASS" starttime="20231121 15:30:46.897" endtime="20231121 15:30:48.672"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${followers_locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:58:45.794" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
-<status status="PASS" starttime="20231121 14:58:45.794" endtime="20231121 14:58:45.909"/>
+<msg timestamp="20231121 15:30:48.672" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
+<status status="PASS" starttime="20231121 15:30:48.672" endtime="20231121 15:30:49.013"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:43.655" endtime="20231121 14:58:45.909"/>
+<status status="PASS" starttime="20231121 15:30:46.897" endtime="20231121 15:30:49.013"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:43.431" endtime="20231121 14:58:45.909"/>
+<status status="PASS" starttime="20231121 15:30:46.458" endtime="20231121 15:30:49.021"/>
 </test>
 <test id="s1-t3" name="Interações com seguidores" line="86">
 <kw name="Set Variable" library="BuiltIn">
 <var>${voltas}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231121 14:58:45.917" level="INFO">${voltas} = 1</msg>
-<status status="PASS" starttime="20231121 14:58:45.917" endtime="20231121 14:58:45.917"/>
+<msg timestamp="20231121 15:30:49.021" level="INFO">${voltas} = 1</msg>
+<status status="PASS" starttime="20231121 15:30:49.021" endtime="20231121 15:30:49.021"/>
 </kw>
 <while condition="True">
 <iter>
@@ -123,52 +123,52 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:45.917" endtime="20231121 14:58:47.422"/>
+<status status="PASS" starttime="20231121 15:30:49.029" endtime="20231121 15:30:50.309"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:47.422" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:47.422" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:47.422" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:47.422" endtime="20231121 14:58:47.438"/>
+<msg timestamp="20231121 15:30:50.309" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:30:50.309" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:30:50.309" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:30:50.309" endtime="20231121 15:30:50.373"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:47.438" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:47.438" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:47.438" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:47.438" endtime="20231121 14:58:47.462"/>
+<msg timestamp="20231121 15:30:50.373" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:30:50.373" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:30:50.373" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:30:50.373" endtime="20231121 15:30:50.557"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:47.470" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:47.470" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:47.470" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:47.462" endtime="20231121 14:58:47.656"/>
+<msg timestamp="20231121 15:30:50.557" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:30:50.557" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:30:50.557" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:30:50.557" endtime="20231121 15:30:50.900"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:45.917" endtime="20231121 14:58:47.656"/>
+<status status="PASS" starttime="20231121 15:30:49.021" endtime="20231121 15:30:50.900"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:45.917" endtime="20231121 14:58:47.656"/>
+<status status="PASS" starttime="20231121 15:30:49.021" endtime="20231121 15:30:50.900"/>
 </iter>
-<status status="PASS" starttime="20231121 14:58:45.917" endtime="20231121 14:58:47.656"/>
+<status status="PASS" starttime="20231121 15:30:49.021" endtime="20231121 15:30:50.900"/>
 </for>
 <kw name="Confirmar usuário">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:47.656" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:58:47.656" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:58:47.656" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:58:47.656" endtime="20231121 14:58:47.688"/>
+<msg timestamp="20231121 15:30:50.900" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:30:50.900" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:30:50.900" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:30:50.900" endtime="20231121 15:30:50.987"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:47.656" endtime="20231121 14:58:47.688"/>
+<status status="PASS" starttime="20231121 15:30:50.900" endtime="20231121 15:30:50.987"/>
 </kw>
 <kw name="Verificar se segue e entrar em mensagens">
 <try>
@@ -177,91 +177,127 @@
 <arg>${follow_verify}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:47.688" endtime="20231121 14:58:50.479"/>
+<msg timestamp="20231121 15:30:54.480" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-170.png"&gt;&lt;img src="selenium-screenshot-170.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231121 15:30:54.480" level="FAIL">Element 'css=span &gt; .x5n08af' not visible after 3 seconds.</msg>
+<status status="FAIL" starttime="20231121 15:30:50.987" endtime="20231121 15:30:54.488"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20231121 14:58:50.479" endtime="20231121 14:58:50.917"/>
+<status status="NOT RUN" starttime="20231121 15:30:54.488" endtime="20231121 15:30:54.488"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:47.688" endtime="20231121 14:58:50.917"/>
+<status status="FAIL" starttime="20231121 15:30:50.987" endtime="20231121 15:30:54.488"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Set Variable" library="BuiltIn">
 <var>${boolean}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:30:54.488" level="INFO">${boolean} = 1</msg>
+<status status="PASS" starttime="20231121 15:30:54.488" endtime="20231121 15:30:54.488"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<status status="PASS" starttime="20231121 15:30:54.488" endtime="20231121 15:30:54.512"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:30:54.512" level="INFO">Clicking button 'css=._acan'.</msg>
+<status status="PASS" starttime="20231121 15:30:54.512" endtime="20231121 15:30:54.961"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<status status="PASS" starttime="20231121 15:30:54.961" endtime="20231121 15:30:56.044"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:30:56.044" level="INFO">Clicking element 'css=.xjyslct'.</msg>
+<status status="PASS" starttime="20231121 15:30:56.044" endtime="20231121 15:30:56.132"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<status status="PASS" starttime="20231121 15:30:56.132" endtime="20231121 15:30:59.180"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:30:59.180" level="INFO">Clicking element 'css=.x1gg8mnh'.</msg>
+<status status="PASS" starttime="20231121 15:30:59.180" endtime="20231121 15:30:59.300"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:30:59.502" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20231121 15:30:59.300" endtime="20231121 15:30:59.502"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>${message_content}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:30:59.502" level="INFO">Sending key(s) ('Mensagem enviada pelo Bot.',) to page.</msg>
+<msg timestamp="20231121 15:30:59.502" level="INFO">Sending keys Mensagem enviada pelo Bot.</msg>
+<status status="PASS" starttime="20231121 15:30:59.502" endtime="20231121 15:30:59.951"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:30:59.951" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:30:59.951" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:30:59.951" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:30:59.951" endtime="20231121 15:31:00.034"/>
 </kw>
 <kw name="Entrar no perfil">
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${profile_locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231121 15:31:00.034" endtime="20231121 15:31:00.066"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${profile_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231121 15:31:00.066" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
+<status status="PASS" starttime="20231121 15:31:00.066" endtime="20231121 15:31:00.172"/>
+</kw>
+<status status="PASS" starttime="20231121 15:31:00.034" endtime="20231121 15:31:00.172"/>
 </kw>
 <kw name="Entrar em seguidores">
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${followers_locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231121 15:31:00.172" endtime="20231121 15:31:00.654"/>
 </kw>
-<status status="NOT RUN" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${followers_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231121 15:31:00.662" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
+<status status="PASS" starttime="20231121 15:31:00.654" endtime="20231121 15:31:00.838"/>
+</kw>
+<status status="PASS" starttime="20231121 15:31:00.172" endtime="20231121 15:31:00.838"/>
+</kw>
+<status status="PASS" starttime="20231121 15:30:54.488" endtime="20231121 15:31:00.838"/>
 </branch>
-<status status="PASS" starttime="20231121 14:58:47.688" endtime="20231121 14:58:50.917"/>
+<status status="PASS" starttime="20231121 15:30:50.987" endtime="20231121 15:31:00.838"/>
 </try>
-<status status="PASS" starttime="20231121 14:58:47.688" endtime="20231121 14:58:50.917"/>
+<status status="PASS" starttime="20231121 15:30:50.987" endtime="20231121 15:31:00.838"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:45.917" endtime="20231121 14:58:50.917"/>
+<status status="PASS" starttime="20231121 15:30:49.021" endtime="20231121 15:31:00.838"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${voltas}</var>
 <arg>${voltas} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231121 14:58:50.917" level="INFO">${voltas} = 2</msg>
-<status status="PASS" starttime="20231121 14:58:50.917" endtime="20231121 14:58:50.917"/>
+<msg timestamp="20231121 15:31:00.838" level="INFO">${voltas} = 2</msg>
+<status status="PASS" starttime="20231121 15:31:00.838" endtime="20231121 15:31:00.838"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:45.917" endtime="20231121 14:58:50.917"/>
+<status status="PASS" starttime="20231121 15:30:49.021" endtime="20231121 15:31:00.838"/>
 </iter>
 <iter>
 <kw name="Keywords para loop">
@@ -275,38 +311,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:50.917" endtime="20231121 14:58:52.057"/>
+<status status="PASS" starttime="20231121 15:31:00.846" endtime="20231121 15:31:02.191"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:52.057" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:52.057" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:52.057" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:52.057" endtime="20231121 14:58:52.073"/>
+<msg timestamp="20231121 15:31:02.191" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:02.191" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:02.191" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:02.191" endtime="20231121 15:31:02.215"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:52.073" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:52.073" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:52.073" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:52.073" endtime="20231121 14:58:52.097"/>
+<msg timestamp="20231121 15:31:02.215" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:02.215" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:02.215" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:02.215" endtime="20231121 15:31:02.241"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:52.097" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:52.097" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:52.097" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:52.097" endtime="20231121 14:58:52.157"/>
+<msg timestamp="20231121 15:31:02.241" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:02.241" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:02.241" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:02.241" endtime="20231121 15:31:02.305"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:50.917" endtime="20231121 14:58:52.157"/>
+<status status="PASS" starttime="20231121 15:31:00.846" endtime="20231121 15:31:02.305"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:50.917" endtime="20231121 14:58:52.157"/>
+<status status="PASS" starttime="20231121 15:31:00.846" endtime="20231121 15:31:02.305"/>
 </iter>
 <iter>
 <var name="${i}">1</var>
@@ -314,52 +350,52 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:52.158" endtime="20231121 14:58:52.183"/>
+<status status="PASS" starttime="20231121 15:31:02.305" endtime="20231121 15:31:02.337"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:52.183" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:52.183" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:52.183" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:52.183" endtime="20231121 14:58:52.239"/>
+<msg timestamp="20231121 15:31:02.337" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:02.337" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:02.337" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:02.337" endtime="20231121 15:31:02.409"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:52.239" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:52.239" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:52.239" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:52.239" endtime="20231121 14:58:52.287"/>
+<msg timestamp="20231121 15:31:02.409" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:02.409" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:02.409" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:02.409" endtime="20231121 15:31:02.457"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:52.287" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:52.287" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:52.287" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:52.287" endtime="20231121 14:58:52.441"/>
+<msg timestamp="20231121 15:31:02.465" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:02.465" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:02.465" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:02.457" endtime="20231121 15:31:02.614"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:52.158" endtime="20231121 14:58:52.441"/>
+<status status="PASS" starttime="20231121 15:31:02.305" endtime="20231121 15:31:02.614"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:52.157" endtime="20231121 14:58:52.441"/>
+<status status="PASS" starttime="20231121 15:31:02.305" endtime="20231121 15:31:02.614"/>
 </iter>
-<status status="PASS" starttime="20231121 14:58:50.917" endtime="20231121 14:58:52.441"/>
+<status status="PASS" starttime="20231121 15:31:00.846" endtime="20231121 15:31:02.614"/>
 </for>
 <kw name="Confirmar usuário">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:52.441" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:58:52.441" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:58:52.441" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:58:52.441" endtime="20231121 14:58:52.497"/>
+<msg timestamp="20231121 15:31:02.614" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:02.614" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:02.614" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:02.614" endtime="20231121 15:31:02.694"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:52.441" endtime="20231121 14:58:52.497"/>
+<status status="PASS" starttime="20231121 15:31:02.614" endtime="20231121 15:31:02.694"/>
 </kw>
 <kw name="Verificar se segue e entrar em mensagens">
 <try>
@@ -368,91 +404,127 @@
 <arg>${follow_verify}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:52.505" endtime="20231121 14:58:55.396"/>
+<msg timestamp="20231121 15:31:06.168" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-171.png"&gt;&lt;img src="selenium-screenshot-171.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231121 15:31:06.168" level="FAIL">Element 'css=span &gt; .x5n08af' not visible after 3 seconds.</msg>
+<status status="FAIL" starttime="20231121 15:31:02.694" endtime="20231121 15:31:06.168"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20231121 14:58:55.396" endtime="20231121 14:58:55.843"/>
+<status status="NOT RUN" starttime="20231121 15:31:06.168" endtime="20231121 15:31:06.168"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:52.505" endtime="20231121 14:58:55.843"/>
+<status status="FAIL" starttime="20231121 15:31:02.694" endtime="20231121 15:31:06.168"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Set Variable" library="BuiltIn">
 <var>${boolean}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:06.168" level="INFO">${boolean} = 1</msg>
+<status status="PASS" starttime="20231121 15:31:06.168" endtime="20231121 15:31:06.168"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<status status="PASS" starttime="20231121 15:31:06.168" endtime="20231121 15:31:06.192"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:06.192" level="INFO">Clicking button 'css=._acan'.</msg>
+<status status="PASS" starttime="20231121 15:31:06.192" endtime="20231121 15:31:06.555"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<status status="PASS" starttime="20231121 15:31:06.563" endtime="20231121 15:31:07.925"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:07.925" level="INFO">Clicking element 'css=.xjyslct'.</msg>
+<status status="PASS" starttime="20231121 15:31:07.925" endtime="20231121 15:31:08.005"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<status status="PASS" starttime="20231121 15:31:08.005" endtime="20231121 15:31:10.442"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:10.442" level="INFO">Clicking element 'css=.x1gg8mnh'.</msg>
+<status status="PASS" starttime="20231121 15:31:10.442" endtime="20231121 15:31:10.509"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:10.711" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20231121 15:31:10.509" endtime="20231121 15:31:10.711"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>${message_content}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:10.711" level="INFO">Sending key(s) ('Mensagem enviada pelo Bot.',) to page.</msg>
+<msg timestamp="20231121 15:31:10.711" level="INFO">Sending keys Mensagem enviada pelo Bot.</msg>
+<status status="PASS" starttime="20231121 15:31:10.711" endtime="20231121 15:31:11.077"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:11.077" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:11.077" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:11.077" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:11.077" endtime="20231121 15:31:11.132"/>
 </kw>
 <kw name="Entrar no perfil">
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${profile_locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231121 15:31:11.132" endtime="20231121 15:31:11.256"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${profile_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231121 15:31:11.256" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
+<status status="PASS" starttime="20231121 15:31:11.256" endtime="20231121 15:31:11.483"/>
+</kw>
+<status status="PASS" starttime="20231121 15:31:11.132" endtime="20231121 15:31:11.483"/>
 </kw>
 <kw name="Entrar em seguidores">
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${followers_locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231121 15:31:11.483" endtime="20231121 15:31:11.675"/>
 </kw>
-<status status="NOT RUN" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${followers_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231121 15:31:11.675" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
+<status status="PASS" starttime="20231121 15:31:11.675" endtime="20231121 15:31:11.777"/>
+</kw>
+<status status="PASS" starttime="20231121 15:31:11.483" endtime="20231121 15:31:11.777"/>
+</kw>
+<status status="PASS" starttime="20231121 15:31:06.168" endtime="20231121 15:31:11.777"/>
 </branch>
-<status status="PASS" starttime="20231121 14:58:52.505" endtime="20231121 14:58:55.843"/>
+<status status="PASS" starttime="20231121 15:31:02.694" endtime="20231121 15:31:11.777"/>
 </try>
-<status status="PASS" starttime="20231121 14:58:52.505" endtime="20231121 14:58:55.843"/>
+<status status="PASS" starttime="20231121 15:31:02.694" endtime="20231121 15:31:11.777"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:50.917" endtime="20231121 14:58:55.843"/>
+<status status="PASS" starttime="20231121 15:31:00.838" endtime="20231121 15:31:11.777"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${voltas}</var>
 <arg>${voltas} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231121 14:58:55.843" level="INFO">${voltas} = 3</msg>
-<status status="PASS" starttime="20231121 14:58:55.843" endtime="20231121 14:58:55.843"/>
+<msg timestamp="20231121 15:31:11.777" level="INFO">${voltas} = 3</msg>
+<status status="PASS" starttime="20231121 15:31:11.777" endtime="20231121 15:31:11.777"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:50.917" endtime="20231121 14:58:55.843"/>
+<status status="PASS" starttime="20231121 15:31:00.838" endtime="20231121 15:31:11.777"/>
 </iter>
 <iter>
 <kw name="Keywords para loop">
@@ -466,38 +538,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:55.843" endtime="20231121 14:58:57.103"/>
+<status status="PASS" starttime="20231121 15:31:11.777" endtime="20231121 15:31:12.917"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.103" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.103" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.103" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.103" endtime="20231121 14:58:57.127"/>
+<msg timestamp="20231121 15:31:12.917" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:12.917" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:12.925" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:12.917" endtime="20231121 15:31:12.966"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.127" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.127" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.127" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.127" endtime="20231121 14:58:57.151"/>
+<msg timestamp="20231121 15:31:12.966" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:12.966" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:12.966" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:12.966" endtime="20231121 15:31:13.022"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.151" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.151" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.151" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.151" endtime="20231121 14:58:57.245"/>
+<msg timestamp="20231121 15:31:13.022" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:13.022" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:13.022" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:13.022" endtime="20231121 15:31:13.078"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:55.843" endtime="20231121 14:58:57.245"/>
+<status status="PASS" starttime="20231121 15:31:11.777" endtime="20231121 15:31:13.078"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:55.843" endtime="20231121 14:58:57.245"/>
+<status status="PASS" starttime="20231121 15:31:11.777" endtime="20231121 15:31:13.078"/>
 </iter>
 <iter>
 <var name="${i}">1</var>
@@ -505,38 +577,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:57.245" endtime="20231121 14:58:57.277"/>
+<status status="PASS" starttime="20231121 15:31:13.078" endtime="20231121 15:31:13.110"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.277" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.277" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.277" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.277" endtime="20231121 14:58:57.333"/>
+<msg timestamp="20231121 15:31:13.110" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:13.110" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:13.110" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:13.110" endtime="20231121 15:31:13.174"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.333" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.333" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.333" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.333" endtime="20231121 14:58:57.357"/>
+<msg timestamp="20231121 15:31:13.174" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:13.174" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:13.174" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:13.174" endtime="20231121 15:31:13.206"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.365" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.365" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.365" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.365" endtime="20231121 14:58:57.421"/>
+<msg timestamp="20231121 15:31:13.206" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:13.206" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:13.206" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:13.206" endtime="20231121 15:31:13.270"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:57.245" endtime="20231121 14:58:57.421"/>
+<status status="PASS" starttime="20231121 15:31:13.078" endtime="20231121 15:31:13.270"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:57.245" endtime="20231121 14:58:57.421"/>
+<status status="PASS" starttime="20231121 15:31:13.078" endtime="20231121 15:31:13.270"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -544,52 +616,52 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:58:57.421" endtime="20231121 14:58:57.453"/>
+<status status="PASS" starttime="20231121 15:31:13.270" endtime="20231121 15:31:13.294"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.453" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.453" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.453" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.453" endtime="20231121 14:58:57.517"/>
+<msg timestamp="20231121 15:31:13.302" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:13.302" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:13.302" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:13.294" endtime="20231121 15:31:13.358"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.517" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.517" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.517" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.517" endtime="20231121 14:58:57.542"/>
+<msg timestamp="20231121 15:31:13.358" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:13.358" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:13.358" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:13.358" endtime="20231121 15:31:13.390"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.542" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:58:57.542" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:58:57.542" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:58:57.542" endtime="20231121 14:58:57.665"/>
+<msg timestamp="20231121 15:31:13.398" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:13.398" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:13.398" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:13.390" endtime="20231121 15:31:13.534"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:57.421" endtime="20231121 14:58:57.665"/>
+<status status="PASS" starttime="20231121 15:31:13.270" endtime="20231121 15:31:13.534"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:57.421" endtime="20231121 14:58:57.665"/>
+<status status="PASS" starttime="20231121 15:31:13.270" endtime="20231121 15:31:13.534"/>
 </iter>
-<status status="PASS" starttime="20231121 14:58:55.843" endtime="20231121 14:58:57.665"/>
+<status status="PASS" starttime="20231121 15:31:11.777" endtime="20231121 15:31:13.534"/>
 </for>
 <kw name="Confirmar usuário">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:58:57.665" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:58:57.665" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:58:57.665" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:58:57.665" endtime="20231121 14:58:57.750"/>
+<msg timestamp="20231121 15:31:13.534" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:13.534" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:13.534" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:13.534" endtime="20231121 15:31:13.719"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:57.665" endtime="20231121 14:58:57.750"/>
+<status status="PASS" starttime="20231121 15:31:13.534" endtime="20231121 15:31:13.719"/>
 </kw>
 <kw name="Verificar se segue e entrar em mensagens">
 <try>
@@ -598,127 +670,127 @@
 <arg>${follow_verify}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20231121 14:59:01.469" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-166.png"&gt;&lt;img src="selenium-screenshot-166.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231121 14:59:01.469" level="FAIL">Element 'css=span &gt; .x5n08af' not visible after 3 seconds.</msg>
-<status status="FAIL" starttime="20231121 14:58:57.750" endtime="20231121 14:59:01.469"/>
+<msg timestamp="20231121 15:31:17.138" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-172.png"&gt;&lt;img src="selenium-screenshot-172.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231121 15:31:17.138" level="FAIL">Element 'css=span &gt; .x5n08af' not visible after 3 seconds.</msg>
+<status status="FAIL" starttime="20231121 15:31:13.719" endtime="20231121 15:31:17.141"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:01.469" endtime="20231121 14:59:01.469"/>
+<status status="NOT RUN" starttime="20231121 15:31:17.141" endtime="20231121 15:31:17.141"/>
 </kw>
-<status status="FAIL" starttime="20231121 14:58:57.750" endtime="20231121 14:59:01.469"/>
+<status status="FAIL" starttime="20231121 15:31:13.719" endtime="20231121 15:31:17.141"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Set Variable" library="BuiltIn">
 <var>${boolean}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231121 14:59:01.469" level="INFO">${boolean} = 1</msg>
-<status status="PASS" starttime="20231121 14:59:01.469" endtime="20231121 14:59:01.469"/>
+<msg timestamp="20231121 15:31:17.142" level="INFO">${boolean} = 1</msg>
+<status status="PASS" starttime="20231121 15:31:17.141" endtime="20231121 15:31:17.142"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:01.469" endtime="20231121 14:59:01.501"/>
+<status status="PASS" starttime="20231121 15:31:17.142" endtime="20231121 15:31:17.175"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:01.501" level="INFO">Clicking button 'css=._acan'.</msg>
-<status status="PASS" starttime="20231121 14:59:01.501" endtime="20231121 14:59:01.688"/>
+<msg timestamp="20231121 15:31:17.175" level="INFO">Clicking button 'css=._acan'.</msg>
+<status status="PASS" starttime="20231121 15:31:17.175" endtime="20231121 15:31:17.493"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:01.688" endtime="20231121 14:59:03.855"/>
+<status status="PASS" starttime="20231121 15:31:17.493" endtime="20231121 15:31:18.697"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:03.855" level="INFO">Clicking element 'css=.xjyslct'.</msg>
-<status status="PASS" starttime="20231121 14:59:03.855" endtime="20231121 14:59:03.943"/>
+<msg timestamp="20231121 15:31:18.697" level="INFO">Clicking element 'css=.xjyslct'.</msg>
+<status status="PASS" starttime="20231121 15:31:18.697" endtime="20231121 15:31:18.897"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:03.943" endtime="20231121 14:59:06.615"/>
+<status status="PASS" starttime="20231121 15:31:18.897" endtime="20231121 15:31:21.261"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:06.615" level="INFO">Clicking element 'css=.x1gg8mnh'.</msg>
-<status status="PASS" starttime="20231121 14:59:06.615" endtime="20231121 14:59:06.738"/>
+<msg timestamp="20231121 15:31:21.261" level="INFO">Clicking element 'css=.x1gg8mnh'.</msg>
+<status status="PASS" starttime="20231121 15:31:21.261" endtime="20231121 15:31:21.317"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231121 14:59:06.948" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20231121 14:59:06.738" endtime="20231121 14:59:06.948"/>
+<msg timestamp="20231121 15:31:21.519" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20231121 15:31:21.317" endtime="20231121 15:31:21.519"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>${message_content}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:06.948" level="INFO">Sending key(s) ('Mensagem enviada pelo Bot.',) to page.</msg>
-<msg timestamp="20231121 14:59:06.948" level="INFO">Sending keys Mensagem enviada pelo Bot.</msg>
-<status status="PASS" starttime="20231121 14:59:06.948" endtime="20231121 14:59:07.561"/>
+<msg timestamp="20231121 15:31:21.519" level="INFO">Sending key(s) ('Mensagem enviada pelo Bot.',) to page.</msg>
+<msg timestamp="20231121 15:31:21.519" level="INFO">Sending keys Mensagem enviada pelo Bot.</msg>
+<status status="PASS" starttime="20231121 15:31:21.519" endtime="20231121 15:31:22.002"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:07.561" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:59:07.561" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:59:07.561" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:59:07.561" endtime="20231121 14:59:07.644"/>
+<msg timestamp="20231121 15:31:22.010" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:22.010" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:22.010" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:22.002" endtime="20231121 15:31:22.091"/>
 </kw>
 <kw name="Entrar no perfil">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${profile_locator}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:07.644" endtime="20231121 14:59:07.700"/>
+<status status="PASS" starttime="20231121 15:31:22.091" endtime="20231121 15:31:22.140"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${profile_locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:07.700" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
-<status status="PASS" starttime="20231121 14:59:07.700" endtime="20231121 14:59:07.806"/>
+<msg timestamp="20231121 15:31:22.140" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
+<status status="PASS" starttime="20231121 15:31:22.140" endtime="20231121 15:31:22.228"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:07.644" endtime="20231121 14:59:07.806"/>
+<status status="PASS" starttime="20231121 15:31:22.091" endtime="20231121 15:31:22.228"/>
 </kw>
 <kw name="Entrar em seguidores">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${followers_locator}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:07.806" endtime="20231121 14:59:07.978"/>
+<status status="PASS" starttime="20231121 15:31:22.236" endtime="20231121 15:31:22.388"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${followers_locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:07.978" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
-<status status="PASS" starttime="20231121 14:59:07.978" endtime="20231121 14:59:08.074"/>
+<msg timestamp="20231121 15:31:22.388" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
+<status status="PASS" starttime="20231121 15:31:22.388" endtime="20231121 15:31:22.500"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:07.806" endtime="20231121 14:59:08.074"/>
+<status status="PASS" starttime="20231121 15:31:22.228" endtime="20231121 15:31:22.500"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:01.469" endtime="20231121 14:59:08.074"/>
+<status status="PASS" starttime="20231121 15:31:17.141" endtime="20231121 15:31:22.500"/>
 </branch>
-<status status="PASS" starttime="20231121 14:58:57.750" endtime="20231121 14:59:08.074"/>
+<status status="PASS" starttime="20231121 15:31:13.719" endtime="20231121 15:31:22.500"/>
 </try>
-<status status="PASS" starttime="20231121 14:58:57.750" endtime="20231121 14:59:08.074"/>
+<status status="PASS" starttime="20231121 15:31:13.719" endtime="20231121 15:31:22.500"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:55.843" endtime="20231121 14:59:08.074"/>
+<status status="PASS" starttime="20231121 15:31:11.777" endtime="20231121 15:31:22.500"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${voltas}</var>
 <arg>${voltas} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231121 14:59:08.074" level="INFO">${voltas} = 4</msg>
-<status status="PASS" starttime="20231121 14:59:08.074" endtime="20231121 14:59:08.074"/>
+<msg timestamp="20231121 15:31:22.500" level="INFO">${voltas} = 4</msg>
+<status status="PASS" starttime="20231121 15:31:22.500" endtime="20231121 15:31:22.500"/>
 </kw>
-<status status="PASS" starttime="20231121 14:58:55.843" endtime="20231121 14:59:08.074"/>
+<status status="PASS" starttime="20231121 15:31:11.777" endtime="20231121 15:31:22.500"/>
 </iter>
 <iter>
 <kw name="Keywords para loop">
@@ -732,38 +804,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:08.074" endtime="20231121 14:59:09.301"/>
+<status status="PASS" starttime="20231121 15:31:22.500" endtime="20231121 15:31:23.562"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.301" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.301" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.301" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.301" endtime="20231121 14:59:09.317"/>
+<msg timestamp="20231121 15:31:23.570" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.570" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.570" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.570" endtime="20231121 15:31:23.586"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.317" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.317" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.317" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.317" endtime="20231121 14:59:09.342"/>
+<msg timestamp="20231121 15:31:23.586" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.586" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.586" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.586" endtime="20231121 15:31:23.602"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.342" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.342" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.342" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.342" endtime="20231121 14:59:09.401"/>
+<msg timestamp="20231121 15:31:23.602" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.602" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.602" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.602" endtime="20231121 15:31:23.674"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:08.074" endtime="20231121 14:59:09.401"/>
+<status status="PASS" starttime="20231121 15:31:22.500" endtime="20231121 15:31:23.674"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:08.074" endtime="20231121 14:59:09.401"/>
+<status status="PASS" starttime="20231121 15:31:22.500" endtime="20231121 15:31:23.674"/>
 </iter>
 <iter>
 <var name="${i}">1</var>
@@ -771,38 +843,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:09.401" endtime="20231121 14:59:09.435"/>
+<status status="PASS" starttime="20231121 15:31:23.674" endtime="20231121 15:31:23.706"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.435" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.435" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.435" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.435" endtime="20231121 14:59:09.491"/>
+<msg timestamp="20231121 15:31:23.706" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.706" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.706" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.706" endtime="20231121 15:31:23.770"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.491" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.491" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.491" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.491" endtime="20231121 14:59:09.523"/>
+<msg timestamp="20231121 15:31:23.770" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.770" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.770" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.770" endtime="20231121 15:31:23.802"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.523" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.523" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.523" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.523" endtime="20231121 14:59:09.579"/>
+<msg timestamp="20231121 15:31:23.802" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.802" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.802" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.802" endtime="20231121 15:31:23.858"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:09.401" endtime="20231121 14:59:09.579"/>
+<status status="PASS" starttime="20231121 15:31:23.674" endtime="20231121 15:31:23.858"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:09.401" endtime="20231121 14:59:09.587"/>
+<status status="PASS" starttime="20231121 15:31:23.674" endtime="20231121 15:31:23.858"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -810,38 +882,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:09.587" endtime="20231121 14:59:09.619"/>
+<status status="PASS" starttime="20231121 15:31:23.858" endtime="20231121 15:31:23.890"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.619" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.619" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.619" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.619" endtime="20231121 14:59:09.675"/>
+<msg timestamp="20231121 15:31:23.890" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.890" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.890" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.890" endtime="20231121 15:31:23.946"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.675" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.675" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.675" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.675" endtime="20231121 14:59:09.707"/>
+<msg timestamp="20231121 15:31:23.946" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.946" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.946" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.946" endtime="20231121 15:31:23.978"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.707" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.707" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.707" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.707" endtime="20231121 14:59:09.788"/>
+<msg timestamp="20231121 15:31:23.978" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:23.978" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:23.978" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:23.978" endtime="20231121 15:31:24.042"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:09.587" endtime="20231121 14:59:09.788"/>
+<status status="PASS" starttime="20231121 15:31:23.858" endtime="20231121 15:31:24.042"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:09.587" endtime="20231121 14:59:09.788"/>
+<status status="PASS" starttime="20231121 15:31:23.858" endtime="20231121 15:31:24.042"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -849,52 +921,52 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:09.788" endtime="20231121 14:59:09.812"/>
+<status status="PASS" starttime="20231121 15:31:24.042" endtime="20231121 15:31:24.066"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.820" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.820" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.820" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.812" endtime="20231121 14:59:09.868"/>
+<msg timestamp="20231121 15:31:24.074" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:24.074" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:24.074" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:24.074" endtime="20231121 15:31:24.130"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.868" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.868" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.868" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.868" endtime="20231121 14:59:09.916"/>
+<msg timestamp="20231121 15:31:24.130" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:24.130" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:24.130" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:24.130" endtime="20231121 15:31:24.178"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:09.924" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:09.924" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:09.924" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:09.916" endtime="20231121 14:59:10.052"/>
+<msg timestamp="20231121 15:31:24.178" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:24.186" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:24.186" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:24.178" endtime="20231121 15:31:24.341"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:09.788" endtime="20231121 14:59:10.052"/>
+<status status="PASS" starttime="20231121 15:31:24.042" endtime="20231121 15:31:24.341"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:09.788" endtime="20231121 14:59:10.052"/>
+<status status="PASS" starttime="20231121 15:31:24.042" endtime="20231121 15:31:24.341"/>
 </iter>
-<status status="PASS" starttime="20231121 14:59:08.074" endtime="20231121 14:59:10.052"/>
+<status status="PASS" starttime="20231121 15:31:22.500" endtime="20231121 15:31:24.341"/>
 </for>
 <kw name="Confirmar usuário">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:10.052" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:59:10.052" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:59:10.052" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:59:10.052" endtime="20231121 14:59:10.126"/>
+<msg timestamp="20231121 15:31:24.341" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:24.341" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:24.341" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:24.341" endtime="20231121 15:31:24.382"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:10.052" endtime="20231121 14:59:10.126"/>
+<status status="PASS" starttime="20231121 15:31:24.341" endtime="20231121 15:31:24.382"/>
 </kw>
 <kw name="Verificar se segue e entrar em mensagens">
 <try>
@@ -903,91 +975,91 @@
 <arg>${follow_verify}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:10.126" endtime="20231121 14:59:12.542"/>
+<status status="PASS" starttime="20231121 15:31:24.382" endtime="20231121 15:31:26.609"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20231121 14:59:12.550" endtime="20231121 14:59:12.976"/>
+<status status="PASS" starttime="20231121 15:31:26.609" endtime="20231121 15:31:27.128"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:10.126" endtime="20231121 14:59:12.976"/>
+<status status="PASS" starttime="20231121 15:31:24.382" endtime="20231121 15:31:27.128"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Set Variable" library="BuiltIn">
 <var>${boolean}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>${message_content}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Entrar no perfil">
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Entrar em seguidores">
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
-<status status="NOT RUN" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<status status="NOT RUN" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </branch>
-<status status="PASS" starttime="20231121 14:59:10.126" endtime="20231121 14:59:12.976"/>
+<status status="PASS" starttime="20231121 15:31:24.382" endtime="20231121 15:31:27.128"/>
 </try>
-<status status="PASS" starttime="20231121 14:59:10.126" endtime="20231121 14:59:12.976"/>
+<status status="PASS" starttime="20231121 15:31:24.382" endtime="20231121 15:31:27.128"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:08.074" endtime="20231121 14:59:12.976"/>
+<status status="PASS" starttime="20231121 15:31:22.500" endtime="20231121 15:31:27.128"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${voltas}</var>
 <arg>${voltas} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231121 14:59:12.976" level="INFO">${voltas} = 5</msg>
-<status status="PASS" starttime="20231121 14:59:12.976" endtime="20231121 14:59:12.976"/>
+<msg timestamp="20231121 15:31:27.128" level="INFO">${voltas} = 5</msg>
+<status status="PASS" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.128"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:08.074" endtime="20231121 14:59:12.976"/>
+<status status="PASS" starttime="20231121 15:31:22.500" endtime="20231121 15:31:27.128"/>
 </iter>
 <iter>
 <kw name="Keywords para loop">
@@ -1001,38 +1073,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:12.976" endtime="20231121 14:59:14.130"/>
+<status status="PASS" starttime="20231121 15:31:27.128" endtime="20231121 15:31:27.992"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.130" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.130" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.130" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.130" endtime="20231121 14:59:14.146"/>
+<msg timestamp="20231121 15:31:27.992" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:27.992" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:27.992" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:27.992" endtime="20231121 15:31:28.013"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.146" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.146" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.146" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.146" endtime="20231121 14:59:14.170"/>
+<msg timestamp="20231121 15:31:28.021" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.021" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.021" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.013" endtime="20231121 15:31:28.053"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.170" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.170" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.170" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.170" endtime="20231121 14:59:14.229"/>
+<msg timestamp="20231121 15:31:28.061" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.061" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.061" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.053" endtime="20231121 15:31:28.133"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:12.976" endtime="20231121 14:59:14.229"/>
+<status status="PASS" starttime="20231121 15:31:27.128" endtime="20231121 15:31:28.133"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:12.976" endtime="20231121 14:59:14.229"/>
+<status status="PASS" starttime="20231121 15:31:27.128" endtime="20231121 15:31:28.133"/>
 </iter>
 <iter>
 <var name="${i}">1</var>
@@ -1040,38 +1112,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:14.237" endtime="20231121 14:59:14.261"/>
+<status status="PASS" starttime="20231121 15:31:28.133" endtime="20231121 15:31:28.165"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.261" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.261" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.261" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.261" endtime="20231121 14:59:14.317"/>
+<msg timestamp="20231121 15:31:28.165" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.165" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.165" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.165" endtime="20231121 15:31:28.221"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.317" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.317" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.317" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.317" endtime="20231121 14:59:14.349"/>
+<msg timestamp="20231121 15:31:28.221" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.221" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.221" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.221" endtime="20231121 15:31:28.257"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.349" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.349" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.349" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.349" endtime="20231121 14:59:14.405"/>
+<msg timestamp="20231121 15:31:28.257" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.257" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.257" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.257" endtime="20231121 15:31:28.313"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.229" endtime="20231121 14:59:14.405"/>
+<status status="PASS" starttime="20231121 15:31:28.133" endtime="20231121 15:31:28.313"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.229" endtime="20231121 14:59:14.405"/>
+<status status="PASS" starttime="20231121 15:31:28.133" endtime="20231121 15:31:28.313"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -1079,38 +1151,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:14.413" endtime="20231121 14:59:14.437"/>
+<status status="PASS" starttime="20231121 15:31:28.313" endtime="20231121 15:31:28.345"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.437" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.437" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.437" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.437" endtime="20231121 14:59:14.485"/>
+<msg timestamp="20231121 15:31:28.345" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.345" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.345" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.345" endtime="20231121 15:31:28.398"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.485" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.485" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.485" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.485" endtime="20231121 14:59:14.517"/>
+<msg timestamp="20231121 15:31:28.406" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.406" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.406" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.398" endtime="20231121 15:31:28.438"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.517" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.517" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.517" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.517" endtime="20231121 14:59:14.581"/>
+<msg timestamp="20231121 15:31:28.438" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.438" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.438" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.438" endtime="20231121 15:31:28.502"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.405" endtime="20231121 14:59:14.581"/>
+<status status="PASS" starttime="20231121 15:31:28.313" endtime="20231121 15:31:28.502"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.405" endtime="20231121 14:59:14.581"/>
+<status status="PASS" starttime="20231121 15:31:28.313" endtime="20231121 15:31:28.502"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -1118,38 +1190,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:14.581" endtime="20231121 14:59:14.613"/>
+<status status="PASS" starttime="20231121 15:31:28.502" endtime="20231121 15:31:28.534"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.613" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.613" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.613" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.613" endtime="20231121 14:59:14.685"/>
+<msg timestamp="20231121 15:31:28.534" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.534" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.534" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.534" endtime="20231121 15:31:28.616"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.685" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.685" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.685" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.685" endtime="20231121 14:59:14.701"/>
+<msg timestamp="20231121 15:31:28.616" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.616" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.616" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.616" endtime="20231121 15:31:28.649"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.701" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.701" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.701" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.701" endtime="20231121 14:59:14.800"/>
+<msg timestamp="20231121 15:31:28.649" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.649" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.649" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.649" endtime="20231121 15:31:28.714"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.581" endtime="20231121 14:59:14.800"/>
+<status status="PASS" starttime="20231121 15:31:28.502" endtime="20231121 15:31:28.714"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.581" endtime="20231121 14:59:14.800"/>
+<status status="PASS" starttime="20231121 15:31:28.502" endtime="20231121 15:31:28.714"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -1157,52 +1229,52 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:14.800" endtime="20231121 14:59:14.840"/>
+<status status="PASS" starttime="20231121 15:31:28.714" endtime="20231121 15:31:28.746"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.840" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.840" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.840" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.840" endtime="20231121 14:59:14.901"/>
+<msg timestamp="20231121 15:31:28.746" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.746" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.746" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.746" endtime="20231121 15:31:28.802"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.901" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.901" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.901" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.901" endtime="20231121 14:59:14.933"/>
+<msg timestamp="20231121 15:31:28.802" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.802" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.802" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.802" endtime="20231121 15:31:28.834"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:14.933" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:14.933" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:14.933" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:14.933" endtime="20231121 14:59:15.104"/>
+<msg timestamp="20231121 15:31:28.834" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:28.834" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:28.834" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:28.834" endtime="20231121 15:31:28.980"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.800" endtime="20231121 14:59:15.104"/>
+<status status="PASS" starttime="20231121 15:31:28.714" endtime="20231121 15:31:28.980"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:14.800" endtime="20231121 14:59:15.104"/>
+<status status="PASS" starttime="20231121 15:31:28.714" endtime="20231121 15:31:28.980"/>
 </iter>
-<status status="PASS" starttime="20231121 14:59:12.976" endtime="20231121 14:59:15.104"/>
+<status status="PASS" starttime="20231121 15:31:27.128" endtime="20231121 15:31:28.980"/>
 </for>
 <kw name="Confirmar usuário">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:15.104" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:59:15.104" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:59:15.104" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:59:15.104" endtime="20231121 14:59:15.160"/>
+<msg timestamp="20231121 15:31:28.988" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:28.988" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:28.988" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:28.980" endtime="20231121 15:31:29.076"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:15.104" endtime="20231121 14:59:15.160"/>
+<status status="PASS" starttime="20231121 15:31:28.980" endtime="20231121 15:31:29.076"/>
 </kw>
 <kw name="Verificar se segue e entrar em mensagens">
 <try>
@@ -1211,127 +1283,127 @@
 <arg>${follow_verify}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20231121 14:59:18.728" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-167.png"&gt;&lt;img src="selenium-screenshot-167.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231121 14:59:18.728" level="FAIL">Element 'css=span &gt; .x5n08af' not visible after 3 seconds.</msg>
-<status status="FAIL" starttime="20231121 14:59:15.160" endtime="20231121 14:59:18.728"/>
+<msg timestamp="20231121 15:31:32.492" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-173.png"&gt;&lt;img src="selenium-screenshot-173.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231121 15:31:32.492" level="FAIL">Element 'css=span &gt; .x5n08af' not visible after 3 seconds.</msg>
+<status status="FAIL" starttime="20231121 15:31:29.076" endtime="20231121 15:31:32.492"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:18.736" endtime="20231121 14:59:18.736"/>
+<status status="NOT RUN" starttime="20231121 15:31:32.492" endtime="20231121 15:31:32.492"/>
 </kw>
-<status status="FAIL" starttime="20231121 14:59:15.160" endtime="20231121 14:59:18.736"/>
+<status status="FAIL" starttime="20231121 15:31:29.076" endtime="20231121 15:31:32.492"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Set Variable" library="BuiltIn">
 <var>${boolean}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231121 14:59:18.736" level="INFO">${boolean} = 1</msg>
-<status status="PASS" starttime="20231121 14:59:18.736" endtime="20231121 14:59:18.736"/>
+<msg timestamp="20231121 15:31:32.492" level="INFO">${boolean} = 1</msg>
+<status status="PASS" starttime="20231121 15:31:32.492" endtime="20231121 15:31:32.492"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:18.736" endtime="20231121 14:59:18.931"/>
+<status status="PASS" starttime="20231121 15:31:32.492" endtime="20231121 15:31:32.592"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:18.931" level="INFO">Clicking button 'css=._acan'.</msg>
-<status status="PASS" starttime="20231121 14:59:18.931" endtime="20231121 14:59:19.194"/>
+<msg timestamp="20231121 15:31:32.592" level="INFO">Clicking button 'css=._acan'.</msg>
+<status status="PASS" starttime="20231121 15:31:32.592" endtime="20231121 15:31:33.125"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:19.194" endtime="20231121 14:59:20.432"/>
+<status status="PASS" starttime="20231121 15:31:33.125" endtime="20231121 15:31:34.263"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:20.432" level="INFO">Clicking element 'css=.xjyslct'.</msg>
-<status status="PASS" starttime="20231121 14:59:20.432" endtime="20231121 14:59:20.595"/>
+<msg timestamp="20231121 15:31:34.263" level="INFO">Clicking element 'css=.xjyslct'.</msg>
+<status status="PASS" starttime="20231121 15:31:34.263" endtime="20231121 15:31:34.376"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:20.595" endtime="20231121 14:59:22.754"/>
+<status status="PASS" starttime="20231121 15:31:34.376" endtime="20231121 15:31:36.255"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:22.754" level="INFO">Clicking element 'css=.x1gg8mnh'.</msg>
-<status status="PASS" starttime="20231121 14:59:22.754" endtime="20231121 14:59:22.847"/>
+<msg timestamp="20231121 15:31:36.255" level="INFO">Clicking element 'css=.x1gg8mnh'.</msg>
+<status status="PASS" starttime="20231121 15:31:36.255" endtime="20231121 15:31:36.350"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231121 14:59:23.050" level="INFO">Slept 200 milliseconds</msg>
-<status status="PASS" starttime="20231121 14:59:22.847" endtime="20231121 14:59:23.050"/>
+<msg timestamp="20231121 15:31:36.555" level="INFO">Slept 200 milliseconds</msg>
+<status status="PASS" starttime="20231121 15:31:36.350" endtime="20231121 15:31:36.555"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>${message_content}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:23.056" level="INFO">Sending key(s) ('Mensagem enviada pelo Bot.',) to page.</msg>
-<msg timestamp="20231121 14:59:23.056" level="INFO">Sending keys Mensagem enviada pelo Bot.</msg>
-<status status="PASS" starttime="20231121 14:59:23.050" endtime="20231121 14:59:23.524"/>
+<msg timestamp="20231121 15:31:36.555" level="INFO">Sending key(s) ('Mensagem enviada pelo Bot.',) to page.</msg>
+<msg timestamp="20231121 15:31:36.555" level="INFO">Sending keys Mensagem enviada pelo Bot.</msg>
+<status status="PASS" starttime="20231121 15:31:36.555" endtime="20231121 15:31:36.988"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:23.524" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:59:23.524" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:59:23.524" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:59:23.524" endtime="20231121 14:59:23.597"/>
+<msg timestamp="20231121 15:31:36.996" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:36.996" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:36.996" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:36.996" endtime="20231121 15:31:37.086"/>
 </kw>
 <kw name="Entrar no perfil">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${profile_locator}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:23.605" endtime="20231121 14:59:23.656"/>
+<status status="PASS" starttime="20231121 15:31:37.086" endtime="20231121 15:31:37.292"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${profile_locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:23.664" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
-<status status="PASS" starttime="20231121 14:59:23.656" endtime="20231121 14:59:23.745"/>
+<msg timestamp="20231121 15:31:37.292" level="INFO">Clicking element 'css=div:nth-child(8) .x1i10hfl &gt; .x9f619'.</msg>
+<status status="PASS" starttime="20231121 15:31:37.292" endtime="20231121 15:31:37.396"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:23.605" endtime="20231121 14:59:23.745"/>
+<status status="PASS" starttime="20231121 15:31:37.086" endtime="20231121 15:31:37.396"/>
 </kw>
 <kw name="Entrar em seguidores">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${followers_locator}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:23.753" endtime="20231121 14:59:23.918"/>
+<status status="PASS" starttime="20231121 15:31:37.396" endtime="20231121 15:31:37.767"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${followers_locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231121 14:59:23.918" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
-<status status="PASS" starttime="20231121 14:59:23.918" endtime="20231121 14:59:24.038"/>
+<msg timestamp="20231121 15:31:37.775" level="INFO">Clicking element 'css=.xl565be:nth-child(2) &gt; .x1i10hfl'.</msg>
+<status status="PASS" starttime="20231121 15:31:37.767" endtime="20231121 15:31:37.888"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:23.745" endtime="20231121 14:59:24.038"/>
+<status status="PASS" starttime="20231121 15:31:37.396" endtime="20231121 15:31:37.888"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:18.736" endtime="20231121 14:59:24.038"/>
+<status status="PASS" starttime="20231121 15:31:32.492" endtime="20231121 15:31:37.888"/>
 </branch>
-<status status="PASS" starttime="20231121 14:59:15.160" endtime="20231121 14:59:24.038"/>
+<status status="PASS" starttime="20231121 15:31:29.076" endtime="20231121 15:31:37.888"/>
 </try>
-<status status="PASS" starttime="20231121 14:59:15.160" endtime="20231121 14:59:24.038"/>
+<status status="PASS" starttime="20231121 15:31:29.076" endtime="20231121 15:31:37.888"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:12.976" endtime="20231121 14:59:24.038"/>
+<status status="PASS" starttime="20231121 15:31:27.128" endtime="20231121 15:31:37.888"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${voltas}</var>
 <arg>${voltas} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231121 14:59:24.046" level="INFO">${voltas} = 6</msg>
-<status status="PASS" starttime="20231121 14:59:24.038" endtime="20231121 14:59:24.046"/>
+<msg timestamp="20231121 15:31:37.888" level="INFO">${voltas} = 6</msg>
+<status status="PASS" starttime="20231121 15:31:37.888" endtime="20231121 15:31:37.888"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:12.976" endtime="20231121 14:59:24.046"/>
+<status status="PASS" starttime="20231121 15:31:27.128" endtime="20231121 15:31:37.888"/>
 </iter>
 <iter>
 <kw name="Keywords para loop">
@@ -1345,38 +1417,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:24.046" endtime="20231121 14:59:25.292"/>
+<status status="PASS" starttime="20231121 15:31:37.888" endtime="20231121 15:31:39.040"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.292" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.292" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.292" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.292" endtime="20231121 14:59:25.308"/>
+<msg timestamp="20231121 15:31:39.040" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.040" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.040" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.040" endtime="20231121 15:31:39.081"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.308" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.308" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.308" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.308" endtime="20231121 14:59:25.332"/>
+<msg timestamp="20231121 15:31:39.089" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.089" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.089" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.081" endtime="20231121 15:31:39.137"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.340" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.340" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.340" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.332" endtime="20231121 14:59:25.394"/>
+<msg timestamp="20231121 15:31:39.137" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.137" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.137" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.137" endtime="20231121 15:31:39.209"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:24.046" endtime="20231121 14:59:25.394"/>
+<status status="PASS" starttime="20231121 15:31:37.888" endtime="20231121 15:31:39.209"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:24.046" endtime="20231121 14:59:25.394"/>
+<status status="PASS" starttime="20231121 15:31:37.888" endtime="20231121 15:31:39.209"/>
 </iter>
 <iter>
 <var name="${i}">1</var>
@@ -1384,38 +1456,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:25.394" endtime="20231121 14:59:25.426"/>
+<status status="PASS" starttime="20231121 15:31:39.209" endtime="20231121 15:31:39.249"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.426" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.434" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.434" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.426" endtime="20231121 14:59:25.490"/>
+<msg timestamp="20231121 15:31:39.249" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.249" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.249" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.249" endtime="20231121 15:31:39.308"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.498" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.498" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.498" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.498" endtime="20231121 14:59:25.531"/>
+<msg timestamp="20231121 15:31:39.308" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.308" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.308" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.308" endtime="20231121 15:31:39.340"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.531" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.531" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.531" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.531" endtime="20231121 14:59:25.587"/>
+<msg timestamp="20231121 15:31:39.340" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.340" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.340" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.340" endtime="20231121 15:31:39.396"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.394" endtime="20231121 14:59:25.587"/>
+<status status="PASS" starttime="20231121 15:31:39.209" endtime="20231121 15:31:39.404"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.394" endtime="20231121 14:59:25.587"/>
+<status status="PASS" starttime="20231121 15:31:39.209" endtime="20231121 15:31:39.404"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -1423,38 +1495,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:25.587" endtime="20231121 14:59:25.619"/>
+<status status="PASS" starttime="20231121 15:31:39.404" endtime="20231121 15:31:39.438"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.619" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.619" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.619" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.619" endtime="20231121 14:59:25.672"/>
+<msg timestamp="20231121 15:31:39.438" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.438" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.438" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.438" endtime="20231121 15:31:39.566"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.672" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.672" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.672" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.672" endtime="20231121 14:59:25.698"/>
+<msg timestamp="20231121 15:31:39.566" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.566" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.566" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.566" endtime="20231121 15:31:39.659"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.698" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.698" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.698" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.698" endtime="20231121 14:59:25.761"/>
+<msg timestamp="20231121 15:31:39.659" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.659" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.659" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.659" endtime="20231121 15:31:39.723"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.587" endtime="20231121 14:59:25.761"/>
+<status status="PASS" starttime="20231121 15:31:39.404" endtime="20231121 15:31:39.723"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.587" endtime="20231121 14:59:25.761"/>
+<status status="PASS" starttime="20231121 15:31:39.404" endtime="20231121 15:31:39.723"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -1462,38 +1534,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:25.761" endtime="20231121 14:59:25.793"/>
+<status status="PASS" starttime="20231121 15:31:39.723" endtime="20231121 15:31:39.756"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.793" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.793" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.793" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.793" endtime="20231121 14:59:25.841"/>
+<msg timestamp="20231121 15:31:39.756" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.756" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.756" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.756" endtime="20231121 15:31:39.805"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.841" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.841" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.841" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.841" endtime="20231121 14:59:25.889"/>
+<msg timestamp="20231121 15:31:39.805" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.805" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.805" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.805" endtime="20231121 15:31:39.885"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.889" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.889" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.889" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.889" endtime="20231121 14:59:25.955"/>
+<msg timestamp="20231121 15:31:39.885" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.885" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.885" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.885" endtime="20231121 15:31:39.941"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.761" endtime="20231121 14:59:25.955"/>
+<status status="PASS" starttime="20231121 15:31:39.723" endtime="20231121 15:31:39.941"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.761" endtime="20231121 14:59:25.955"/>
+<status status="PASS" starttime="20231121 15:31:39.723" endtime="20231121 15:31:39.941"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -1501,38 +1573,38 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:25.955" endtime="20231121 14:59:25.983"/>
+<status status="PASS" starttime="20231121 15:31:39.941" endtime="20231121 15:31:39.973"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:25.983" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:25.983" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:25.983" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:25.983" endtime="20231121 14:59:26.039"/>
+<msg timestamp="20231121 15:31:39.973" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:39.973" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:39.973" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:39.973" endtime="20231121 15:31:40.030"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:26.039" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:26.039" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:26.039" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:26.039" endtime="20231121 14:59:26.055"/>
+<msg timestamp="20231121 15:31:40.030" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:40.030" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:40.030" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:40.030" endtime="20231121 15:31:40.055"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:26.055" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:26.055" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:26.055" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:26.055" endtime="20231121 14:59:26.119"/>
+<msg timestamp="20231121 15:31:40.055" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:40.055" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:40.063" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:40.055" endtime="20231121 15:31:40.127"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.955" endtime="20231121 14:59:26.119"/>
+<status status="PASS" starttime="20231121 15:31:39.941" endtime="20231121 15:31:40.127"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:25.955" endtime="20231121 14:59:26.119"/>
+<status status="PASS" starttime="20231121 15:31:39.941" endtime="20231121 15:31:40.127"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -1540,52 +1612,52 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${remove_follower}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231121 14:59:26.119" endtime="20231121 14:59:26.170"/>
+<status status="PASS" starttime="20231121 15:31:40.127" endtime="20231121 15:31:40.159"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:26.170" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:26.170" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:26.170" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:26.170" endtime="20231121 14:59:26.218"/>
+<msg timestamp="20231121 15:31:40.159" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:40.159" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:40.159" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:40.159" endtime="20231121 15:31:40.223"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:26.226" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:26.226" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:26.226" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:26.218" endtime="20231121 14:59:26.242"/>
+<msg timestamp="20231121 15:31:40.223" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:40.223" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:40.223" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:40.223" endtime="20231121 15:31:40.247"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>TAB</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:26.242" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20231121 14:59:26.242" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20231121 14:59:26.242" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20231121 14:59:26.242" endtime="20231121 14:59:26.420"/>
+<msg timestamp="20231121 15:31:40.247" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20231121 15:31:40.247" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20231121 15:31:40.247" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231121 15:31:40.247" endtime="20231121 15:31:40.401"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:26.119" endtime="20231121 14:59:26.420"/>
+<status status="PASS" starttime="20231121 15:31:40.127" endtime="20231121 15:31:40.401"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:26.119" endtime="20231121 14:59:26.420"/>
+<status status="PASS" starttime="20231121 15:31:40.127" endtime="20231121 15:31:40.401"/>
 </iter>
-<status status="PASS" starttime="20231121 14:59:24.046" endtime="20231121 14:59:26.420"/>
+<status status="PASS" starttime="20231121 15:31:37.888" endtime="20231121 15:31:40.401"/>
 </for>
 <kw name="Confirmar usuário">
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231121 14:59:26.420" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
-<msg timestamp="20231121 14:59:26.420" level="INFO">Pressing special key ENTER to browser.</msg>
-<msg timestamp="20231121 14:59:26.420" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231121 14:59:26.420" endtime="20231121 14:59:26.487"/>
+<msg timestamp="20231121 15:31:40.401" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20231121 15:31:40.401" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20231121 15:31:40.401" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231121 15:31:40.401" endtime="20231121 15:31:40.486"/>
 </kw>
-<status status="PASS" starttime="20231121 14:59:26.420" endtime="20231121 14:59:26.487"/>
+<status status="PASS" starttime="20231121 15:31:40.401" endtime="20231121 15:31:40.486"/>
 </kw>
 <kw name="Verificar se segue e entrar em mensagens">
 <try>
@@ -1594,216 +1666,184 @@
 <arg>${follow_verify}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20231121 14:59:29.301" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
-Stacktrace:
-	GetHandleVerifier [0x00007FF730C882B2+55298]
-	(No symbol) [0x00007FF730BF5E02]
-	(No symbol) [0x00007FF730AB05AB]
-	(No symbol) [0x00007FF730A90038]
-	(No symbol) [0x00007FF730B16BC7]
-	(No symbol) [0x00007FF730B2A15F]
-	(No symbol) [0x00007FF730B11E83]
-	(No symbol) [0x00007FF730AE670A]
-	(No symbol) [0x00007FF730AE7964]
-	GetHandleVerifier [0x00007FF731000AAB+3694587]
-	GetHandleVerifier [0x00007FF73105728E+4048862]
-	GetHandleVerifier [0x00007FF73104F173+4015811]
-	GetHandleVerifier [0x00007FF730D247D6+695590]
-	(No symbol) [0x00007FF730C00CE8]
-	(No symbol) [0x00007FF730BFCF34]
-	(No symbol) [0x00007FF730BFD062]
-	(No symbol) [0x00007FF730BED3A3]
-	BaseThreadInitThunk [0x00007FF8AFA57614+20]
-	RtlUserThreadStart [0x00007FF8B14C26B1+33]
-</msg>
-<msg timestamp="20231121 14:59:29.312" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
-Stacktrace:
-	GetHandleVerifier [0x00007FF730C882B2+55298]
-	(No symbol) [0x00007FF730BF5E02]
-	(No symbol) [0x00007FF730AB05AB]
-	(No symbol) [0x00007FF730A90038]
-	(No symbol) [0x00007FF730B16BC7]
-	(No symbol) [0x00007FF730B2A15F]
-	(No symbol) [0x00007FF730B11E83]
-	(No symbol) [0x00007FF730AE670A]
-	(No symbol) [0x00007FF730AE7964]
-	GetHandleVerifier [0x00007FF731000AAB+3694587]
-	GetHandleVerifier [0x00007FF73105728E+4048862]
-	GetHandleVerifier [0x00007FF73104F173+4015811]
-	GetHandleVerifier [0x00007FF730D247D6+695590]
-	(No symbol) [0x00007FF730C00CE8]
-	(No symbol) [0x00007FF730BFCF34]
-	(No symbol) [0x00007FF730BFD062]
-	(No symbol) [0x00007FF730BED3A3]
-	BaseThreadInitThunk [0x00007FF8AFA57614+20]
-	RtlUserThreadStart [0x00007FF8B14C26B1+33]
-</msg>
-<status status="FAIL" starttime="20231121 14:59:26.487" endtime="20231121 14:59:29.312"/>
+<msg timestamp="20231121 15:31:43.883" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-174.png"&gt;&lt;img src="selenium-screenshot-174.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231121 15:31:43.883" level="FAIL">Element 'css=span &gt; .x5n08af' not visible after 3 seconds.</msg>
+<status status="FAIL" starttime="20231121 15:31:40.486" endtime="20231121 15:31:43.883"/>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.312" endtime="20231121 14:59:29.312"/>
+<status status="NOT RUN" starttime="20231121 15:31:43.883" endtime="20231121 15:31:43.883"/>
 </kw>
-<status status="FAIL" starttime="20231121 14:59:26.487" endtime="20231121 14:59:29.312"/>
+<status status="FAIL" starttime="20231121 15:31:40.486" endtime="20231121 15:31:43.883"/>
 </branch>
 <branch type="EXCEPT">
 <kw name="Set Variable" library="BuiltIn">
 <var>${boolean}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20231121 14:59:29.312" level="INFO">${boolean} = 1</msg>
-<status status="PASS" starttime="20231121 14:59:29.312" endtime="20231121 14:59:29.312"/>
+<msg timestamp="20231121 15:31:43.883" level="INFO">${boolean} = 1</msg>
+<status status="PASS" starttime="20231121 15:31:43.883" endtime="20231121 15:31:43.883"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20231121 14:59:29.331" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
-Stacktrace:
-	GetHandleVerifier [0x00007FF730C882B2+55298]
-	(No symbol) [0x00007FF730BF5E02]
-	(No symbol) [0x00007FF730AB05AB]
-	(No symbol) [0x00007FF730A90038]
-	(No symbol) [0x00007FF730B16BC7]
-	(No symbol) [0x00007FF730B2A15F]
-	(No symbol) [0x00007FF730B11E83]
-	(No symbol) [0x00007FF730AE670A]
-	(No symbol) [0x00007FF730AE7964]
-	GetHandleVerifier [0x00007FF731000AAB+3694587]
-	GetHandleVerifier [0x00007FF73105728E+4048862]
-	GetHandleVerifier [0x00007FF73104F173+4015811]
-	GetHandleVerifier [0x00007FF730D247D6+695590]
-	(No symbol) [0x00007FF730C00CE8]
-	(No symbol) [0x00007FF730BFCF34]
-	(No symbol) [0x00007FF730BFD062]
-	(No symbol) [0x00007FF730BED3A3]
-	BaseThreadInitThunk [0x00007FF8AFA57614+20]
-	RtlUserThreadStart [0x00007FF8B14C26B1+33]
-</msg>
-<msg timestamp="20231121 14:59:29.331" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
-Stacktrace:
-	GetHandleVerifier [0x00007FF730C882B2+55298]
-	(No symbol) [0x00007FF730BF5E02]
-	(No symbol) [0x00007FF730AB05AB]
-	(No symbol) [0x00007FF730A90038]
-	(No symbol) [0x00007FF730B16BC7]
-	(No symbol) [0x00007FF730B2A15F]
-	(No symbol) [0x00007FF730B11E83]
-	(No symbol) [0x00007FF730AE670A]
-	(No symbol) [0x00007FF730AE7964]
-	GetHandleVerifier [0x00007FF731000AAB+3694587]
-	GetHandleVerifier [0x00007FF73105728E+4048862]
-	GetHandleVerifier [0x00007FF73104F173+4015811]
-	GetHandleVerifier [0x00007FF730D247D6+695590]
-	(No symbol) [0x00007FF730C00CE8]
-	(No symbol) [0x00007FF730BFCF34]
-	(No symbol) [0x00007FF730BFD062]
-	(No symbol) [0x00007FF730BED3A3]
-	BaseThreadInitThunk [0x00007FF8AFA57614+20]
-	RtlUserThreadStart [0x00007FF8B14C26B1+33]
-</msg>
-<status status="FAIL" starttime="20231121 14:59:29.312" endtime="20231121 14:59:29.331"/>
+<status status="PASS" starttime="20231121 15:31:43.883" endtime="20231121 15:31:43.915"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${follow_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<msg timestamp="20231121 15:31:43.915" level="INFO">Clicking button 'css=._acan'.</msg>
+<status status="PASS" starttime="20231121 15:31:43.915" endtime="20231121 15:31:44.467"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<msg timestamp="20231121 15:31:45.794" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7614782B2+55298]
+	(No symbol) [0x00007FF7613E5E02]
+	(No symbol) [0x00007FF7612A05AB]
+	(No symbol) [0x00007FF76128E19B]
+	(No symbol) [0x00007FF76128DDF0]
+	(No symbol) [0x00007FF7612A24A1]
+	(No symbol) [0x00007FF76131A18F]
+	(No symbol) [0x00007FF761301E83]
+	(No symbol) [0x00007FF7612D670A]
+	(No symbol) [0x00007FF7612D7964]
+	GetHandleVerifier [0x00007FF7617F0AAB+3694587]
+	GetHandleVerifier [0x00007FF76184728E+4048862]
+	GetHandleVerifier [0x00007FF76183F173+4015811]
+	GetHandleVerifier [0x00007FF7615147D6+695590]
+	(No symbol) [0x00007FF7613F0CE8]
+	(No symbol) [0x00007FF7613ECF34]
+	(No symbol) [0x00007FF7613ED062]
+	(No symbol) [0x00007FF7613DD3A3]
+	BaseThreadInitThunk [0x00007FF8AFA57614+20]
+	RtlUserThreadStart [0x00007FF8B14C26B1+33]
+</msg>
+<msg timestamp="20231121 15:31:45.817" level="FAIL">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=119.0.6045.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7614782B2+55298]
+	(No symbol) [0x00007FF7613E5E02]
+	(No symbol) [0x00007FF7612A045D]
+	(No symbol) [0x00007FF76128E703]
+	(No symbol) [0x00007FF76128CF0E]
+	(No symbol) [0x00007FF76128D9CE]
+	(No symbol) [0x00007FF76129A20F]
+	(No symbol) [0x00007FF7612AB551]
+	(No symbol) [0x00007FF7612AFC1A]
+	(No symbol) [0x00007FF76128E032]
+	(No symbol) [0x00007FF7612AB1E3]
+	(No symbol) [0x00007FF76131AB0B]
+	(No symbol) [0x00007FF761301E83]
+	(No symbol) [0x00007FF7612D670A]
+	(No symbol) [0x00007FF7612D7964]
+	GetHandleVerifier [0x00007FF7617F0AAB+3694587]
+	GetHandleVerifier [0x00007FF76184728E+4048862]
+	GetHandleVerifier [0x00007FF76183F173+4015811]
+	GetHandleVerifier [0x00007FF7615147D6+695590]
+	(No symbol) [0x00007FF7613F0CE8]
+	(No symbol) [0x00007FF7613ECF34]
+	(No symbol) [0x00007FF7613ED062]
+	(No symbol) [0x00007FF7613DD3A3]
+	BaseThreadInitThunk [0x00007FF8AFA57614+20]
+	RtlUserThreadStart [0x00007FF8B14C26B1+33]
+</msg>
+<status status="FAIL" starttime="20231121 15:31:44.467" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${message_box}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>${message_content}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>None</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Entrar no perfil">
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Entrar em seguidores">
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.825" endtime="20231121 15:31:45.825"/>
 </kw>
-<status status="FAIL" starttime="20231121 14:59:29.312" endtime="20231121 14:59:29.331"/>
+<status status="FAIL" starttime="20231121 15:31:43.883" endtime="20231121 15:31:45.825"/>
 </branch>
-<status status="FAIL" starttime="20231121 14:59:26.487" endtime="20231121 14:59:29.331"/>
+<status status="FAIL" starttime="20231121 15:31:40.486" endtime="20231121 15:31:45.825"/>
 </try>
-<status status="FAIL" starttime="20231121 14:59:26.487" endtime="20231121 14:59:29.331"/>
+<status status="FAIL" starttime="20231121 15:31:40.486" endtime="20231121 15:31:45.825"/>
 </kw>
-<status status="FAIL" starttime="20231121 14:59:24.046" endtime="20231121 14:59:29.331"/>
+<status status="FAIL" starttime="20231121 15:31:37.888" endtime="20231121 15:31:45.825"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${voltas}</var>
 <arg>${voltas} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" starttime="20231121 14:59:29.331" endtime="20231121 14:59:29.331"/>
+<status status="NOT RUN" starttime="20231121 15:31:45.833" endtime="20231121 15:31:45.833"/>
 </kw>
-<status status="FAIL" starttime="20231121 14:59:24.046" endtime="20231121 14:59:29.331"/>
+<status status="FAIL" starttime="20231121 15:31:37.888" endtime="20231121 15:31:45.833"/>
 </iter>
-<status status="FAIL" starttime="20231121 14:58:45.917" endtime="20231121 14:59:29.331"/>
+<status status="FAIL" starttime="20231121 15:30:49.021" endtime="20231121 15:31:45.833"/>
 </while>
-<status status="FAIL" starttime="20231121 14:58:45.917" endtime="20231121 14:59:29.339">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
+<status status="FAIL" starttime="20231121 15:30:49.021" endtime="20231121 15:31:45.833">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
   (Session info: chrome=119.0.6045.160)
 Stacktrace:
-	GetHandleVerifier [0x00007FF730C882B2+55298]
-	(No symbol) [0x00007FF730BF5E02]
-	(No symbol) [0x00007FF730AB05AB]
-	(No symbol) [0x00007FF730A90038]
-	(No symbol) [0x00007FF730B16BC7]
-	(No symbol) [0x00007FF730B2A15F]
-	(No symbol) [0x00007FF730B11E83]
-	(No symbol) [0x00007FF730AE670A]
-	(No symbol) [0x00007FF730AE7964]
-	GetHandleVerifier [0x00007FF731000AAB+3694587]
-	GetHandleVerifier [0x00007FF73105728E+4048862]
-	GetHandleVerifier [0x00007FF73104F173+4015811]
-	GetHandleVerifier [0x00007FF730D247D6+695590]
-	(No symbol) [0x00007FF730C00CE8]
-	(No symbol) [0x00007FF730BFCF34]
-	(No symbol) [0x00007FF730BFD062]
-	(No symbol) [0x00007FF730BED3A3]
+	GetHandleVerifier [0x00007FF7614782B2+55298]
+	(No symbol) [0x00007FF7613E5E02]
+	(No symbol) [0x00007FF7612A045D]
+	(No symbol) [0x00007FF76128E703]
+	(No symbol) [0x00007FF76128CF0E]
+	(No symbol) [0x00007FF76128D9CE]
+	(No symbol) [0x00007FF76129A20F]
+	(No symbol) [0x00007FF7612AB551]
+	(No symbol) [0x00007FF7612AFC1A]
+	(No symbol) [0x00007FF76128E032]
+	(No symbol) [0x00007FF7612AB1E3]
+	(No symbol) [0x00007FF76131AB0B]
+	(No symbol) [0x00007FF761301E83]
+	(No symbol) [0x00007FF7612D670A]
+	(No symbol) [0x00007FF7612D7964]
+	GetHandleVerifier [0x00007FF7617F0AAB+3694587]
+	GetHandleVerifier [0x00007FF76184728E+4048862]
+	GetHandleVerifier [0x00007FF76183F173+4015811]
+	GetHandleVerifier [0x00007FF7615147D6+695590]
+	(No symbol) [0x00007FF7613F0CE8]
+	(No symbol) [0x00007FF7613ECF34]
+	(No symbol) [0x00007FF7613ED062]
+	(No symbol) [0x00007FF7613DD3A3]
 	BaseThreadInitThunk [0x00007FF8AFA57614+20]
 	RtlUserThreadStart [0x00007FF8B14C26B1+33]
 </status>
 </test>
-<status status="FAIL" starttime="20231121 14:58:29.630" endtime="20231121 14:59:29.347"/>
+<status status="FAIL" starttime="20231121 15:30:30.213" endtime="20231121 15:31:45.841"/>
 </suite>
 <statistics>
 <total>
@@ -1816,51 +1856,28 @@ Stacktrace:
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231121 14:59:29.301" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
+<msg timestamp="20231121 15:31:45.794" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
   (Session info: chrome=119.0.6045.160)
 Stacktrace:
-	GetHandleVerifier [0x00007FF730C882B2+55298]
-	(No symbol) [0x00007FF730BF5E02]
-	(No symbol) [0x00007FF730AB05AB]
-	(No symbol) [0x00007FF730A90038]
-	(No symbol) [0x00007FF730B16BC7]
-	(No symbol) [0x00007FF730B2A15F]
-	(No symbol) [0x00007FF730B11E83]
-	(No symbol) [0x00007FF730AE670A]
-	(No symbol) [0x00007FF730AE7964]
-	GetHandleVerifier [0x00007FF731000AAB+3694587]
-	GetHandleVerifier [0x00007FF73105728E+4048862]
-	GetHandleVerifier [0x00007FF73104F173+4015811]
-	GetHandleVerifier [0x00007FF730D247D6+695590]
-	(No symbol) [0x00007FF730C00CE8]
-	(No symbol) [0x00007FF730BFCF34]
-	(No symbol) [0x00007FF730BFD062]
-	(No symbol) [0x00007FF730BED3A3]
-	BaseThreadInitThunk [0x00007FF8AFA57614+20]
-	RtlUserThreadStart [0x00007FF8B14C26B1+33]
-</msg>
-<msg timestamp="20231121 14:59:29.331" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
-Stacktrace:
-	GetHandleVerifier [0x00007FF730C882B2+55298]
-	(No symbol) [0x00007FF730BF5E02]
-	(No symbol) [0x00007FF730AB05AB]
-	(No symbol) [0x00007FF730A90038]
-	(No symbol) [0x00007FF730B16BC7]
-	(No symbol) [0x00007FF730B2A15F]
-	(No symbol) [0x00007FF730B11E83]
-	(No symbol) [0x00007FF730AE670A]
-	(No symbol) [0x00007FF730AE7964]
-	GetHandleVerifier [0x00007FF731000AAB+3694587]
-	GetHandleVerifier [0x00007FF73105728E+4048862]
-	GetHandleVerifier [0x00007FF73104F173+4015811]
-	GetHandleVerifier [0x00007FF730D247D6+695590]
-	(No symbol) [0x00007FF730C00CE8]
-	(No symbol) [0x00007FF730BFCF34]
-	(No symbol) [0x00007FF730BFD062]
-	(No symbol) [0x00007FF730BED3A3]
+	GetHandleVerifier [0x00007FF7614782B2+55298]
+	(No symbol) [0x00007FF7613E5E02]
+	(No symbol) [0x00007FF7612A05AB]
+	(No symbol) [0x00007FF76128E19B]
+	(No symbol) [0x00007FF76128DDF0]
+	(No symbol) [0x00007FF7612A24A1]
+	(No symbol) [0x00007FF76131A18F]
+	(No symbol) [0x00007FF761301E83]
+	(No symbol) [0x00007FF7612D670A]
+	(No symbol) [0x00007FF7612D7964]
+	GetHandleVerifier [0x00007FF7617F0AAB+3694587]
+	GetHandleVerifier [0x00007FF76184728E+4048862]
+	GetHandleVerifier [0x00007FF76183F173+4015811]
+	GetHandleVerifier [0x00007FF7615147D6+695590]
+	(No symbol) [0x00007FF7613F0CE8]
+	(No symbol) [0x00007FF7613ECF34]
+	(No symbol) [0x00007FF7613ED062]
+	(No symbol) [0x00007FF7613DD3A3]
 	BaseThreadInitThunk [0x00007FF8AFA57614+20]
 	RtlUserThreadStart [0x00007FF8B14C26B1+33]
 </msg>
