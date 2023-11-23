@@ -45,6 +45,7 @@ Navegar até um perfil
     Press Keys    None    TAB
     Press Keys    None    TAB
     Press Keys    None    TAB
+    Sleep     .05s
 Confirmar usuário
     Press Keys    None    ENTER
 Verificar se segue e entrar em mensagens
