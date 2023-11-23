@@ -10,7 +10,7 @@ bot = telebot.TeleBot(chave)
 def responder(inicio):
     bot.send_photo(inicio.from_user.id,
                    photo="https://scontent-for1-1.xx.fbcdn.net/v/t39.30808-6/402106565_907740337440208_6687529766115017951_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGHgnQIupxFBNmxHjvx3JmA7AZIGqr8SJXsBkgaqvxIlSntaP6C6YAjdV-68Va-rjfMho7fac1teUK1Sj8_rGaW&_nc_ohc=BK-qeocueMEAX9oEc0O&_nc_ht=scontent-for1-1.xx&oh=00_AfBSGj__F4h0I8P7BV9jBrJbKwrgp5yAq4smbQegkfHCTg&oe=65621DB7",
-                   caption="Ola! Somos a loja Murilo Gomes, temos como objetivo vender cursos!. Digite /cursos para os nossos cursos ou /contatos para nossos contatos")
+                   caption="Ola! Somos a loja Murilo Gomes, temos como objetivo vender cursos!. Digite /cursos para os nossos cursos ou /empresa para conhecer nossa empresa.")
 
 
 @bot.message_handler(commands=["cursos"])
@@ -26,10 +26,10 @@ def opcoes(mensagem):
     bot.send_message(mensagem.chat.id, texto)
 
 
-@bot.message_handler(commands=["contatos"])
+@bot.message_handler(commands=["empresa"])
 def opcoes(mensagem):
     texto = """
-    Contatos dos Participantes:
+    Opções para conhecer nossa empresa:
     /quemsomosnos
     /murilo"""
 
@@ -73,19 +73,17 @@ def opcao(menssgem):
                    caption="O curso de Yoga proporciona uma introdução abrangente à prática milenar do yoga. Ele engloba posturas (asanas), técnicas de respiração (pranayama) e meditação, visando promover o equilíbrio físico e mental. Os participantes aprenderão a incorporar o yoga em sua vida cotidiana para melhorar o bem-estar. Assine o nosso curso: /CompraYoga")
 
 
-@bot.message_handler(commands=["murilo"])
-def opcao(mensagem):
-    bot.send_photo(mensagem.from_user.id,
-                   photo="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimageproxyb.ifunny.co%2Fcrop%3Ax-20%2Cresize%3A640x%2Cquality%3A90x75%2Fimages%2Fc036c3609e1a734119055157997df5b224564e1e53240dd556213c779fd6ce1e_1.jpg&tbnid=eLIrG11LCwME4M&vet=12ahUKEwjAzKT4otiCAxU_S7gEHRVsDJsQMygAegQIARA9..i&imgrefurl=https%3A%2F%2Fbr.ifunny.co%2Fmeme%2Finvocacao-do-vral-vrau-RvUKAZz38&docid=rHM0l71uV9NzWM&w=476&h=517&q=invoca%C3%A7%C3%A3o%20do%20vral&ved=2ahUKEwjAzKT4otiCAxU_S7gEHRVsDJsQMygAegQIARA9",
-                   caption="")
-
-
 @bot.message_handler(commands=["quemsomosnos"])
 def opcao(mensagem):
     bot.send_photo(mensagem.from_user.id,
                    
-                   photo="",
-                   caption="Seja bem-vindo à [Nome da Empresa], sua porta de entrada para um universo de aprendizado e crescimento pessoal e profissional. Aqui, acreditamos que o conhecimento é a chave para o sucesso, e estamos empenhados em fornecer cursos de alta qualidade que capacitam indivíduos a alcançarem seus objetivos e sonhos.")
+                   photo="https://scontent-for1-1.xx.fbcdn.net/v/t39.30808-6/402106565_907740337440208_6687529766115017951_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGHgnQIupxFBNmxHjvx3JmA7AZIGqr8SJXsBkgaqvxIlSntaP6C6YAjdV-68Va-rjfMho7fac1teUK1Sj8_rGaW&_nc_ohc=BK-qeocueMEAX9oEc0O&_nc_ht=scontent-for1-1.xx&oh=00_AfBSGj__F4h0I8P7BV9jBrJbKwrgp5yAq4smbQegkfHCTg&oe=65621DB7",
+                   caption="Seja bem-vindo à Murilo Gomes, sua porta de entrada para um universo de aprendizado e crescimento pessoal e profissional. Aqui, acreditamos que o conhecimento é a chave para o sucesso, e estamos empenhados em fornecer cursos de alta qualidade que capacitam indivíduos a alcançarem seus objetivos e sonhos.")
+
+@bot.message_handler(commands=["murilo"])
+def opcao(menssgem):
+        bot.send_audio(menssgem.from_user.id, audio=open("murilo.m4a", 'rb',), caption="Até onde chega o meu conhecimento, Murilo Gomes não é uma divindade ou uma figura religiosa reconhecida globalmente. Parece ser um nome comum de pessoa. Se Murilo Gomes é um deus em algum contexto específico ou cultura local, eu não tenho informações sobre isso. Se você puder fornecer mais contexto ou informações sobre a divindade Murilo Gomes, eu ficarei feliz em tentar ajudar da melhor maneira possível!")
+        bot.send_photo(menssgem.from_user.id, photo="")
 
 @bot.message_handler(commands=["CompraMarketing"])
 def opcao(mensagem):
@@ -115,6 +113,9 @@ def opcao(menssgem):
                    photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/404373869_122130462380067537_1224380065145938493_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHoqKEvZzksM9P_cAPnj70zDL2HsVOAJkIMvYexU4AmQo_XmmI3-74_hYsVGdym-vM-qwurXhXmbqdwc0_TsEPT&_nc_ohc=Jku65upCH7oAX8pYDXA&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfBHrc69q9Q7SZQJnCqRH7pKiC1CJ590jsjiUNhCmIfC2A&oe=65613D1C",
                    caption="Este curso aborda a importância da coleta de resíduos, destacando práticas sustentáveis e métodos eficientes de gestão de resíduos. Os participantes aprenderão sobre a segurança e as melhores práticas associadas à profissão de gari, contribuindo para um ambiente mais limpo e saudável. Assine o nosso curso: /CompraGari")
 
+#@bot.message_handler(commands=["murilo"])
+    #def opcao(menssgem):
+            #bot.send_audio(menssgem.from_user.id, audio=open("murilo.m4a", 'rb'))
 
 bot.polling()
 
