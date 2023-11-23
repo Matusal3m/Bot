@@ -10,7 +10,7 @@ bot = telebot.TeleBot(chave)
 def responder(inicio):
     bot.send_photo(inicio.from_user.id,
                    photo="https://scontent-for1-1.xx.fbcdn.net/v/t39.30808-6/402106565_907740337440208_6687529766115017951_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGHgnQIupxFBNmxHjvx3JmA7AZIGqr8SJXsBkgaqvxIlSntaP6C6YAjdV-68Va-rjfMho7fac1teUK1Sj8_rGaW&_nc_ohc=BK-qeocueMEAX9oEc0O&_nc_ht=scontent-for1-1.xx&oh=00_AfBSGj__F4h0I8P7BV9jBrJbKwrgp5yAq4smbQegkfHCTg&oe=65621DB7",
-                   caption="Ola! Somos a loja Murilo Gomes, temos como objetivo vender cursos!. Digite /cursos para os nossos cursos")
+                   caption="Ola! Somos a loja Murilo Gomes, temos como objetivo vender cursos!. Clique em /cursos para os nossos cursos")
 
 
 @bot.message_handler(commands=["cursos"])
