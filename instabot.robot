@@ -3,7 +3,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${username}              foguetesovietico
+${username}              coacervados77
 ${password}              saviogatoboy22
 ${username_locator}      //*[@id="loginForm"]/div/div[1]/div/label/input
 ${password_locator}      //*[@id="loginForm"]/div/div[2]/div/label/input
@@ -18,10 +18,16 @@ ${message_box}           css=.x1gg8mnh
 ${message_content}       Mensagem enviada pelo Bot.
 ${not_now}               css=.xjqpnuy
 ${refuse_button}         css=.\_a9_1
-${follow_button}         xpath=//button[contains(.,'Seguir')]
 ${private_account}       css=.\_aady
 ${stop_follow}           css=.\_a9-_
+${cancel_locator}        css=.\_a9_1
+${voltas}                1
+${exit_button}           css=.\_abl-
+
 *** Keywords ***
+
+
+
 Abrir Instagram
     Open Browser  https://www.instagram.com/  chrome
 Colocar informações e enviar
@@ -34,10 +40,10 @@ Agora não
     Click Element    ${not_now}
     Wait Until Element Is Visible    ${refuse_button}    10s
     Click Element   ${refuse_button}
-Entrar no perfil
+
+Entrar no perfil e entrar em seguidores
     Wait Until Element Is Visible    ${profile_locator}    10s
     Click Element    ${profile_locator}
-Entrar em seguidores
     Wait Until Element Is Visible    ${followers_locator}    10s
     Click Element    ${followers_locator}
 Navegar até um perfil
@@ -45,55 +51,80 @@ Navegar até um perfil
     Press Keys    None    TAB
     Press Keys    None    TAB
     Press Keys    None    TAB
-    Sleep     .05s
+    Sleep     .1s
 Confirmar usuário
     Press Keys    None    ENTER
+Seguir de volta
+    Wait Until Element Is Visible      ${follow_back_button}
+    Click Button                       ${follow_back_button}
+Enviar mensagem
+    Wait Until Element Is Visible      ${message_button}    2s
+    Click Element                      ${message_button}
+    Wait Until Element Is Visible      ${message_box}    
+    Click Element                      ${message_box}
+    Sleep    .2s
+    Press Keys    None                 ${message_content}
+    Press Keys    None    ENTER
+Repetição dos TABS
+    [Arguments]    ${args}
+    FOR  ${i}  IN RANGE  ${args}
+        Navegar até um perfil
+    END
+Controle se clicar em REMOVER
+    TRY
+        Wait Until Element Is Visible   ${cancel_locator}  2s
+
+    EXCEPT
+        No Operation
+    END
 Verificar se segue e entrar em mensagens
     TRY
         Wait Until Element Is Visible      ${follow_back_verify}    3s
         Go Back
     EXCEPT
-        Wait Until Element Is Visible      ${follow_back_button}
-        Click Button                       ${follow_back_button}
+        Seguir de volta
         TRY
             Page Should Not Contain Element    ${stop_follow}
-            Wait Until Element Is Visible      ${message_button}    2s
-            Click Element                      ${message_button}
-            Wait Until Element Is Visible      ${message_box}    
-            Click Element                      ${message_box}
-            Sleep    .2s
-            Press Keys    None                 ${message_content}
-            Press Keys    None    ENTER
-            Entrar no perfil
-            Entrar em seguidores
+            Enviar mensagem
+            Entrar no perfil e entrar em seguidores
         EXCEPT
             Press Keys    None    ESC
             Go Back
         END
     END
-Enviar mensagem
-    Wait Until Element Is Visible    ${message_box}
-    Sleep    .2s
-    Press Keys    None    ${message_content}
-    Press Keys    None    ENTER
-Keywords para loop  
-    [Arguments]    ${args} 
-    FOR  ${i}  IN RANGE  ${args}
-        Navegar até um perfil         
-    END
-    Confirmar usuário
-    Verificar se segue e entrar em mensagens
+
 *** Test Cases ***
+
 Inicar e fazer login
     Abrir Instagram
     Colocar informações e enviar
     Agora não
 Ir até os seguidores
-    Entrar no perfil
-    Entrar em seguidores
+    Entrar no perfil e entrar em seguidores
 Interações com seguidores
-    ${voltas} =   Set Variable    1
     WHILE  True
-        Keywords para loop    ${voltas}
+        Repetição dos TABS    ${voltas}
+        Confirmar usuário
+        TRY
+            Wait Until Element Is Visible    ${cancel_locator}  3s
+            Press Keys    None    TAB
+            Press Keys    None    TAB
+            Press Keys    None    TAB
+            Confirmar usuário
+        EXCEPT   
+            TRY 
+                Wait Until Element Is Not Visible    ${exit_button}  2s
+            EXCEPT
+                Reload Page
+                Repetição dos TABS    ${voltas}
+                Confirmar usuário
+                Wait Until Element Is Visible    ${cancel_locator}  3s
+                Press Keys    None    TAB
+                Press Keys    None    TAB
+                Press Keys    None    TAB
+                Confirmar usuário
+            END       
+        END
+        Verificar se segue e entrar em mensagens
         ${voltas} =  Evaluate    ${voltas} + 1
     END
