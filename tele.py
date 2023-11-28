@@ -11,7 +11,7 @@ bot = telebot.TeleBot(chave)
 @bot.message_handler(commands=["start"])
 def responder(inicio):
     pass
-bot.send_photo(inicio.from_user.id,
+    bot.send_photo(inicio.from_user.id,
                photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/405230220_122132232158067537_249974436057333749_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGhujRk3kqTU97wLzHaqlAKjsoLW98ZWBKOygtb3xlYEklAPbH6Hgt541-znrgh4hgpzywyli5C8kSpObQhi5tZ&_nc_ohc=LDBuxRcEsyUAX8vel4z&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfAmlv6C5P1bL17ajzOo8DYiYEtJRYiVTHCS5ONk5z52Sg&oe=656AC5C4",
                caption="Ola! Somos a escola EEEP Paulo Petrola, temos como objetivo com esse bot, mostrar um pouco mais sobre cada curso do PP!. Digite ou clique em /cursos para os nossos cursos ou /escola para conhecer nossa escola.")
 
