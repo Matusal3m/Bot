@@ -1,25 +1,17 @@
 import telebot
-import threading
-import schedule
-from time import time, sleep
-from tabulate import tabulate
-from telebot.types import InlineKeyboardButton
-from telebot.types import InlineKeyboardMarkup
-from telebot.types import InlineQueryResultArticle
-from telebot.types import InputTextMessageContent
 
 chave = "6028892799:AAFiKNAdqTzqcRHXcqdoPlykDx1k255fTaU"
 chat_id = "1427119084"
 
 bot = telebot.TeleBot(chave)
 
+# INICIO
 
 @bot.message_handler(commands=["start"])
 def responder(inicio):
     bot.send_photo(inicio.from_user.id,
                    photo="https://scontent-for1-1.xx.fbcdn.net/v/t39.30808-6/402106565_907740337440208_6687529766115017951_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGHgnQIupxFBNmxHjvx3JmA7AZIGqr8SJXsBkgaqvxIlSntaP6C6YAjdV-68Va-rjfMho7fac1teUK1Sj8_rGaW&_nc_ohc=BK-qeocueMEAX9oEc0O&_nc_ht=scontent-for1-1.xx&oh=00_AfBSGj__F4h0I8P7BV9jBrJbKwrgp5yAq4smbQegkfHCTg&oe=65621DB7",
                    caption="Ola! Somos a escola EEEP Paulo Petrola, temos como objetivo com esse bot, mostrar um pouco mais sobre cada curso do PP!. Digite ou clique em /cursos para os nossos cursos ou /escola para conhecer nossa escola.")
-    bot.send_message(inicio.from_user.id,)
 
 
 @bot.message_handler(commands=["cursos"])
@@ -33,10 +25,10 @@ def opcoes(mensagem):
     bot.send_message(mensagem.chat.id, texto)
 
 
-@bot.message_handler(commands=["empresa"])
+@bot.message_handler(commands=["escola"])
 def opcoes(mensagem):
     texto = """
-    Opções para conhecer nossa empresa:
+    Opções para conhecer nossa escola:
     /quemsomosnos
     /murilo
     /PP"""
@@ -46,40 +38,25 @@ def opcoes(mensagem):
 
 # ESCOLHA DOS CURSOS
 
-@bot.message_handler(commands=["Marketing"])
-def opcao(menssgem):
-    bot.send_photo(menssgem.from_user.id,
-                   photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/404349242_122130462332067537_5729683003648836414_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHoou6eBWxY7t0_UgCmnkWrRp3wbhiy5QBGnfBuGLLlAGUo2gxrKuv08sHnohnRfuNaBvsrs3CJgRUT0dFnGZ0M&_nc_ohc=RHBi6B36vAcAX-m94sW&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfB9D5pj3u75C2mpIhxTzObK3Ttn97d7G5AsF36_KyYkVA&oe=6561ADA2",
-                   caption="O curso de Marketing abrange estratégias para promover produtos ou serviços, desde análise de mercado até a implementação de campanhas publicitárias eficazes. Os participantes aprenderão sobre branding, mídias sociais, análise de dados e técnicas de publicidade. Assine o nosso curso: /CompraMarketing")
-
-
-@bot.message_handler(commands=["DesingWeb"])
-def opcao(menssgem):
-    bot.send_photo(menssgem.from_user.id,
-                   photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/403682042_122130462194067537_7176114956553679934_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHWKZ01oKjJ4oTvmDKCMiQNJN0CGwE9Losk3QIbAT0uiyTpDy0wbs-i7oQ9mOer3aN6K2iHL3vkNbDEaQEmp8Pr&_nc_ohc=WzA62uUBBwQAX8FZsMP&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfCD9y-zWQyizIg_n2-UOokc0dnsbk99AeckAUZIisoRkQ&oe=6561986F",
-                   caption="Este curso oferece conhecimentos práticos e teóricos sobre design web, abrangendo desde princípios de design até habilidades técnicas como HTML, CSS e design responsivo. Os alunos aprenderão a criar interfaces atraentes e funcionais para sites modernos. Assine o nosso curso: /CompraDesingWeb")
-
-
-@bot.message_handler(commands=["Gari"])
+@bot.message_handler(commands=["Guia"])
 def opcao(menssgem):
     bot.send_photo(menssgem.from_user.id,
                    photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/404373869_122130462380067537_1224380065145938493_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHoqKEvZzksM9P_cAPnj70zDL2HsVOAJkIMvYexU4AmQo_XmmI3-74_hYsVGdym-vM-qwurXhXmbqdwc0_TsEPT&_nc_ohc=Jku65upCH7oAX8pYDXA&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfBHrc69q9Q7SZQJnCqRH7pKiC1CJ590jsjiUNhCmIfC2A&oe=65613D1C",
-                   caption="Este curso aborda a importância da coleta de resíduos, destacando práticas sustentáveis e métodos eficientes de gestão de resíduos. Os participantes aprenderão sobre a segurança e as melhores práticas associadas à profissão de gari, contribuindo para um ambiente mais limpo e saudável. Assine o nosso curso: /CompraGari")
+                   caption="O curso de Guia de Turismo na Escola Profissionalizante Paulo Petrola oferece uma formação abrangente para aqueles interessados em explorar a indústria do turismo. Guiados por profissionais experientes, os alunos adquirem conhecimentos práticos e teóricos, desde destinos turísticos até técnicas de comunicação. Com um enfoque prático, o programa inclui experiências em campo e destaca-se por preparar os alunos para liderar grupos e oferecer informações relevantes aos visitantes. Ao concluir o curso, os estudantes estarão capacitados para uma carreira dinâmica como guias de turismo, atendendo às crescentes demandas desse setor. Clique em /sobreguia para mais.")
 
 
-@bot.message_handler(commands=["Culinaria"])
+@bot.message_handler(commands=["Enfermagem"])
 def opcao(menssgem):
     bot.send_photo(menssgem.from_user.id,
-                   photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/402143286_122130462272067537_3397677700799831651_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFUqdqx2yRuo-Ch6U8qfA-jzgNw6V5BzVnOA3DpXkHNWQBKfOf9I8s57LGMYk0DqTebfK5xGsdGR7AhQvcab0dm&_nc_ohc=F7albXqD9WAAX_NQ4Pl&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfD9rpqmXVk01x9cXOreOvjUX7xMmqSBThHpe-3TmOkB1A&oe=656272D2",
-                   caption="O curso de Culinária é ideal para entusiastas gastronômicos e aspirantes a chefs. Ele cobre técnicas culinárias básicas, apresentação de pratos, seleção de ingredientes e até mesmo noções de gestão de cozinha. Os participantes desenvolverão habilidades práticas na arte da culinária. Assine o nosso curso: /CompraCulinaria")
+                   photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/404349242_122130462332067537_5729683003648836414_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHoou6eBWxY7t0_UgCmnkWrRp3wbhiy5QBGnfBuGLLlAGUo2gxrKuv08sHnohnRfuNaBvsrs3CJgRUT0dFnGZ0M&_nc_ohc=RHBi6B36vAcAX-m94sW&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfB9D5pj3u75C2mpIhxTzObK3Ttn97d7G5AsF36_KyYkVA&oe=6561ADA2",
+                   caption="O curso de Enfermagem na Escola Profissionalizante Paulo Petrola oferece uma sólida formação para quem busca se dedicar à área da saúde. Sob orientação de profissionais experientes, os alunos exploram teoria e prática, preparando-se para atuar em diversos contextos de cuidados. Com laboratórios bem equipados, o curso proporciona uma jornada prática e enriquecedora, preparando os estudantes para uma carreira gratificante na enfermagem. Clique em /sobrenfer para mais.")
 
 
-@bot.message_handler(commands=["Yoga"])
+@bot.message_handler(commands=["Informatica"])
 def opcao(menssgem):
     bot.send_photo(menssgem.from_user.id,
-                   photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/403604936_122130462428067537_6615021984035286440_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFnBOjExBXnz-vEiNmhASAJNXmhatPUa4g1eaFq09RriBoD6Xbcc1iRxRM4dXt1OC8KV3GX62Lwk74uXwe6WzPY&_nc_ohc=kOz3dwv7G2IAX-T8LXx&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfCiWgruA75Uib4McFKTooT-7yUyY_bR9yzt43ANOMOlLw&oe=65623CC4",
-                   caption="O curso de Yoga proporciona uma introdução abrangente à prática milenar do yoga. Ele engloba posturas (asanas), técnicas de respiração (pranayama) e meditação, visando promover o equilíbrio físico e mental. Os participantes aprenderão a incorporar o yoga em sua vida cotidiana para melhorar o bem-estar. Assine o nosso curso: /CompraYoga")
-
+                   photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/403682042_122130462194067537_7176114956553679934_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHWKZ01oKjJ4oTvmDKCMiQNJN0CGwE9Losk3QIbAT0uiyTpDy0wbs-i7oQ9mOer3aN6K2iHL3vkNbDEaQEmp8Pr&_nc_ohc=WzA62uUBBwQAX8FZsMP&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfCD9y-zWQyizIg_n2-UOokc0dnsbk99AeckAUZIisoRkQ&oe=6561986F",
+                   caption="O curso de informática na Escola Profissionalizante Paulo Petrola oferece uma sólida formação para iniciantes e aprimoramento para quem busca aprofundar seus conhecimentos. Ministrado por instrutores qualificados, abrange desde fundamentos de hardware e software até programação e redes de computadores. Com foco prático e laboratórios equipados, os alunos desenvolvem habilidades prontas para o mercado de trabalho. Ao concluir o curso, estarão preparados para enfrentar os desafios da era digital, seja ingressando no mercado ou buscando estudos avançados. Uma jornada prática e eficaz no mundo da informática. Clique em /sobreinfor para mais.")
 
 @bot.message_handler(commands=["quemsomosnos"])
 def opcao(mensagem):
@@ -98,7 +75,7 @@ def opcao(mensagem):
     
     Estudamos na EEEP Paulo Petrola."""
     bot.send_photo(mensagem.from_user.id,
-                   
+
                    photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/406048687_910690387145203_3961462407516386091_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFYqFJxtBS0MvzqIwBzlMB5vPRC49Oi24-89ELj06Lbj0zfaoyowZsYhQ4ZpptoByUNwzz_FCXbxp8m7HLTGNn7&_nc_ohc=xZdl350JTxAAX_trnfO&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfCaSQCZU9JpnZb5kkLiBkcma94X1zNl06oHduDaeRQQTg&oe=65695293",
                    caption=texto)
 
@@ -122,9 +99,9 @@ A diversidade de cursos técnicos disponíveis na Escola Paulo Petrola amplia as
 
 Em um cenário educacional cada vez mais competitivo, a Escola Paulo Petrola destaca-se não apenas pelos resultados em avaliações, mas também pelo impacto positivo que gera na vida de seus alunos. Com uma proposta pedagógica inovadora e comprometida com a formação integral, a instituição continua a trilhar um caminho de sucesso na educação em Fortaleza, preparando os estudantes para os desafios do futuro.
     """
-    
-    
-    
+
+
+
     bot.send_photo(mensagem.from_user.id, photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/405230220_122132232158067537_249974436057333749_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGhujRk3kqTU97wLzHaqlAKjsoLW98ZWBKOygtb3xlYEklAPbH6Hgt541-znrgh4hgpzywyli5C8kSpObQhi5tZ&_nc_ohc=LDBuxRcEsyUAX8ObrOH&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfCY_luiGAfW2WzschqyC1ILVKFHtFNHCOTzvgXTApxKpQ&oe=6568CB84")
     bot.send_message(texto)
 
