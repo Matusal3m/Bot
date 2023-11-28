@@ -10,10 +10,9 @@ bot = telebot.TeleBot(chave)
 
 @bot.message_handler(commands=["start"])
 def responder(inicio):
-    pass
     bot.send_photo(inicio.from_user.id,
                photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/405230220_122132232158067537_249974436057333749_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGhujRk3kqTU97wLzHaqlAKjsoLW98ZWBKOygtb3xlYEklAPbH6Hgt541-znrgh4hgpzywyli5C8kSpObQhi5tZ&_nc_ohc=LDBuxRcEsyUAX8vel4z&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfAmlv6C5P1bL17ajzOo8DYiYEtJRYiVTHCS5ONk5z52Sg&oe=656AC5C4",
-               caption="Ola! Somos a escola EEEP Paulo Petrola, temos como objetivo com esse bot, mostrar um pouco mais sobre cada curso do PP!. Digite ou clique em /cursos para os nossos cursos ou /escola para conhecer nossa escola.")
+               caption="Olá! Somos a escola EEEP Paulo Petrola, temos como objetivo com esse bot, mostrar um pouco mais sobre cada curso do PP!. Digite ou clique em /cursos para os nossos cursos ou /escola para conhecer nossa escola.")
 
 
 @bot.message_handler(commands=["cursos"])
@@ -51,7 +50,7 @@ def opcao(menssgem):
 def opcao(menssgem):
     bot.send_photo(menssgem.from_user.id,
                    photo="https://scontent-for1-1.xx.fbcdn.net/v/t39.30808-6/406387486_911286573752251_2859501334240123270_n.jpg?stp=dst-jpg_p600x600&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFrfCCMYa47fmQ69uGCrUminQls5f1qnf-dCWzl_Wqd_5iiEYvqAZJgv9LSJo9PCIwxpFCvxNwPM9EWjtC0GTl3&_nc_ohc=h_dq1dE6uPsAX9ak6DQ&_nc_ht=scontent-for1-1.xx&oh=00_AfCqphQ7HBPCxk0rCfEoKh-Uith3KsRev2jbxrv3cslPwg&oe=6569FA29",
-                   caption="O curso de Enfermagem na Escola Profissionalizante Paulo Petrola oferece uma sólida formação para quem busca se dedicar à área da saúde. Sob orientação de profissionais experientes, os alunos exploram teoria e prática, preparando-se para atuar em diversos contextos de cuidados. Com laboratórios bem equipados, o curso proporciona uma jornada prática e enriquecedora, preparando os estudantes para uma carreira gratificante na enfermagem. Clique em /sobrenfer para mais.")
+                   caption="O curso de Enfermagem na Escola Profissionalizante Paulo Petrola oferece uma sólida formação para quem busca se dedicar à área da saúde. Sob orientação de profissionais experientes, os alunos exploram teoria e prática, preparando-se para atuar em diversos contextos de cuidados. Com laboratórios bem equipados, o curso proporciona uma jornada prática e enriquecedora, preparando os estudantes para uma carreira gratificante na enfermagem. Clique em /sobreenfer para mais.")
 
 
 @bot.message_handler(commands=["Informatica"])
@@ -109,7 +108,7 @@ Em um cenário educacional cada vez mais competitivo, a Escola Paulo Petrola des
 
     bot.send_photo(mensagem.from_user.id,
                    photo="https://scontent.ffor7-1.fna.fbcdn.net/v/t39.30808-6/405230220_122132232158067537_249974436057333749_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGhujRk3kqTU97wLzHaqlAKjsoLW98ZWBKOygtb3xlYEklAPbH6Hgt541-znrgh4hgpzywyli5C8kSpObQhi5tZ&_nc_ohc=LDBuxRcEsyUAX8ObrOH&_nc_zt=23&_nc_ht=scontent.ffor7-1.fna&oh=00_AfCY_luiGAfW2WzschqyC1ILVKFHtFNHCOTzvgXTApxKpQ&oe=6568CB84")
-    bot.send_message(texto)
+    bot.send_message(mensagem.from_user.id, texto)
 
 
 @bot.message_handler(commands=["sobreinfor"])
