@@ -107,15 +107,15 @@ Em um cenário educacional cada vez mais competitivo, a Escola Paulo Petrola des
 
 @bot.message_handler(commands=["sobreinfor"])
 def opcao(mensagem):
-    bot.reply_to(mensagem, "Compra aqui: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjT6eqI6deCAxUKlJUCHVkNCEAQFnoECAkQAQ&url=https%3A%2F%2Fwww.iped.com.br%2Fculinaria-gastronomia&usg=AOvVaw2SanjoMezzx-cP565T9-2X&opi=89978449 ")
+    bot.reply_to(mensagem, "Instagram da turma: https://www.instagram.com/1infor.pp/ ")
 
 @bot.message_handler(commands=["sobreenfer"])
 def opcao(mensagem):
-    bot.reply_to(mensagem, "Compra aqui: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjMydKc6deCAxWIpZUCHcT5CS4QFnoECB8QAQ&url=https%3A%2F%2Fwww.udemy.com%2Fpt%2Ftopic%2Fweb-design%2F&usg=AOvVaw1dJCKo58H84f5ujTzQPUI2&opi=89978449 ")
+    bot.reply_to(mensagem, "Instagram da turma: https://www.instagram.com/1enfer.pp/")
 
 @bot.message_handler(commands=["sobreguia"])
 def opcao(mensagem):
-    bot.reply_to(mensagem, "Compra aqui: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiKhKep6deCAxVwr5UCHec4DxgQFnoECAgQAQ&url=https%3A%2F%2Fwww.wreducacional.com.br%2Fcurso-de-gari&usg=AOvVaw17e4aI9KLU3VfqCO2wF1Fu&opi=89978449 ")
+    bot.reply_to(mensagem, "Instagram da turma: https://www.instagram.com/tec.guia1/")
 
 
 bot.polling()
