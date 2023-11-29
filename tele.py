@@ -31,7 +31,6 @@ def opcoes(mensagem):
     texto = """
     Opções para conhecer nossa escola:
     /quemsomosnos
-    /murilo
     /PP"""
 
     bot.send_message(mensagem.chat.id, texto)
