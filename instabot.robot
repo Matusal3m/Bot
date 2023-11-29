@@ -16,7 +16,7 @@ ${follow_back_verify}    css=span > .x5n08af
 ${message_button}        css=.xjyslct
 ${message_box}           css=.x1gg8mnh
 ${message_content}       
-...    Entre no chat do telegram!!
+...    Entre no chat do telegram!!!
 ...    https://web.telegram.org/k/#@URRSsovieticgatoboy_bot
 ${not_now}               css=.xjqpnuy
 ${refuse_button}         css=.\_a9_1
