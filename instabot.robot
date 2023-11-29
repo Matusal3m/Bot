@@ -15,7 +15,9 @@ ${follow_back_button}    css=.\_acan
 ${follow_back_verify}    css=span > .x5n08af
 ${message_button}        css=.xjyslct
 ${message_box}           css=.x1gg8mnh
-${message_content}       Mensagem enviada pelo Bot.
+${message_content}       
+...    Entre no chat do telegram!!
+...    https://web.telegram.org/k/#@URRSsovieticgatoboy_bot
 ${not_now}               css=.xjqpnuy
 ${refuse_button}         css=.\_a9_1
 ${private_account}       css=.\_aady
@@ -73,7 +75,6 @@ Repetição dos TABS
 Controle se clicar em REMOVER
     TRY
         Wait Until Element Is Visible   ${cancel_locator}  2s
-
     EXCEPT
         No Operation
     END
