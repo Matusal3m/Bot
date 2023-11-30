@@ -3,7 +3,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${username}              coacervados77
+${username}              instabotpp
 ${password}              saviogatoboy22
 ${username_locator}      //*[@id="loginForm"]/div/div[1]/div/label/input
 ${password_locator}      //*[@id="loginForm"]/div/div[2]/div/label/input
@@ -113,10 +113,11 @@ Interações com seguidores
             Press Keys    None    TAB
             Confirmar usuário
         EXCEPT   
-            TRY 
+            TRY
                 Wait Until Element Is Not Visible    ${exit_button}  2s
             EXCEPT
                 Reload Page
+                Sleep    1s
                 Repetição dos TABS    ${voltas}
                 Confirmar usuário
                 Wait Until Element Is Visible    ${cancel_locator}  3s
@@ -124,7 +125,7 @@ Interações com seguidores
                 Press Keys    None    TAB
                 Press Keys    None    TAB
                 Confirmar usuário
-            END       
+            END
         END
         Verificar se segue e entrar em mensagens
         ${voltas} =  Evaluate    ${voltas} + 1
